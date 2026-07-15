@@ -1,0 +1,28 @@
+{
+  "weights": {
+    "macd_ema": 0.28,
+    "rsi_reversal": 0.22,
+    "breakout": 0.22,
+    "scalp": 0.16,
+    "fib_retracement": 0.12
+  },
+  "weights_by_regime": {},
+  "regime_trade_counts": {},
+  "params": {
+    "ema_trend": 209,
+    "macd_fast": 11,
+    "macd_slow": 23,
+    "macd_signal": 8,
+    "atr_period": 17,
+    "rsi_period": 14,
+    "rsi_ob": 72,
+    "rsi_os": 33,
+    "bb_period": 21,
+    "bb_std": 1.918,
+    "lookback": 21,
+    "scalp_ema_fast": 11,
+    "scalp_ema_slow": 19,
+    "stoch_period": 8
+  },
+  "sigma": 0.078408
+}

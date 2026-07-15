@@ -1,0 +1,25 @@
+# APEX Terminal — Python dependencies
+# Install with: pip install -r requirements.txt
+# Minimum Python: 3.11+
+
+# Core numeric/data
+numpy>=1.26.0
+pandas>=2.1.0
+
+# Optional: faster HTTP (used automatically if installed)
+# requests>=2.31.0
+
+# Optional: live WebSocket feed (future upgrade)
+# websockets>=12.0
+
+# Optional: Deriv broker adapter (integrations/tradingview/broker_adapters/deriv.py)
+# Only needed if you set DERIV_API_TOKEN to show Deriv account state in the dashboard.
+# websocket-client>=1.7.0
+
+# Optional: MT5 bridge adapter, native mode only (Windows-only, no Linux/Mac SDK exists)
+# Only needed if you set MT5_BRIDGE_MODE=native. The http mode needs nothing extra.
+# MetaTrader5>=5.0.45
+
+# No MetaTrader5 required for the core engine — ever.
+# No broker-specific SDK required for OKX/Binance/Bybit data (public REST only).
+# For LIVE trading, API keys are passed via environment variables.

@@ -1,0 +1,976 @@
+2026-07-12 10:55:59 [INFO] core.engine — ═══ APEX Terminal  mode=PAPER  exchange=MEXC ═══
+2026-07-12 10:55:59 [INFO] data.feed — [FEED] Exchange: MEXC
+2026-07-12 10:55:59 [INFO] execution.paper_executor — [PAPER] Fresh account — balance=10000.00
+2026-07-12 10:55:59 [INFO] execution.router — [ROUTER] Paper mode — simulated fills
+2026-07-12 10:55:59 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\9e13dcc5e_apex_terminal_v21_final\apex_terminal\data_store\trade_journal.csv
+2026-07-12 10:55:59 [INFO] utils.equity_tracker — [EQUITY] Baseline: 10000.00 (date: 2026-07-12)
+2026-07-12 10:55:59 [INFO] core.engine — [ENGINE] Balance: 10000.00 | Mode: PAPER | Exchange: MEXC
+2026-07-12 10:56:00 [INFO] webapp_server — [API] Server running at http://0.0.0.0:8080
+2026-07-12 10:56:00 [INFO] apex — ==============================================
+2026-07-12 10:56:00 [INFO] apex —   Dashboard running →  http://localhost:8080  
+2026-07-12 10:56:00 [INFO] apex — ==============================================
+2026-07-12 10:56:00 [INFO] apex — Exchange status, the Watchdog's patch queue, and connected accounts are all there — the console log only tells part of the story.
+2026-07-12 10:56:01 [INFO] core.engine — [ENGINE] Running under Watchdog supervision (poll=10s). Ctrl+C to stop.
+2026-07-12 10:56:01 [INFO] agent.watchdog — [WATCHDOG] Supervising engine. poll=10s
+2026-07-12 10:56:01 [INFO] core.engine — ── Cycle 1 [LONDON] ──
+2026-07-12 10:56:01 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 10:56:12 [INFO] core.scanner — [SCAN] Scanning 145 symbols (workers=6)
+2026-07-12 10:57:17 [INFO] webapp_server — [API] /settings/weights — override applied: {'macd_ema': 0.28, 'rsi_reversal': 0.22, 'breakout': 0.22, 'scalp': 0.16, 'fib_retracement': 0.12}
+2026-07-12 10:57:31 [INFO] core.engine — [ENGINE] Scan complete — 86 signals found
+2026-07-12 10:57:44 [INFO] strategies.aggregator — [AGG] ✓ SINGLE-STRATEGY BUY | macd_ema weight=0.280 | scanner=A
+2026-07-12 10:57:44 [INFO] core.engine — [ENGINE] ETHFI_USDT — adaptive risk ×0.70 (dd=0.0%, streak=0, conf=0.280) → risk_pct=0.0070
+2026-07-12 10:57:44 [INFO] core.engine — [ENGINE] ➤ BUY ETHFI_USDT macd_ema [single] | qty=3844.405063 price=0.434500 sl=0.423575 tp1=0.441783 tp2=0.449067 tp3=0.456350 rr=1.33
+2026-07-12 10:57:44 [INFO] execution.paper_executor — [PAPER] OPEN BUY ETHFI_USDT 3844.405063 @ 0.434500 | SL=0.423575 TP1=0.441783 TP2=0.449067 TP3=0.456350 | id=e2fa0ef3
+2026-07-12 10:57:46 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\9e13dcc5e_apex_terminal_v21_final\apex_terminal\data_store\trade_journal.csv
+2026-07-12 10:57:47 [INFO] core.engine — ── Cycle 2 [LONDON] ──
+2026-07-12 10:57:47 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 10:57:49 [INFO] core.scanner — [SCAN] Scanning 145 symbols (workers=6)
+2026-07-12 10:58:43 [INFO] core.engine — [ENGINE] Scan complete — 85 signals found
+2026-07-12 10:58:53 [INFO] core.engine — [ENGINE] 19 candidates evaluated, 0 trades entered — top reasons: no_strategy_agreement×18, correlation_blocked×1, volatility_gate_blocked×1
+2026-07-12 10:58:54 [INFO] core.engine — ── Cycle 3 [LONDON] ──
+2026-07-12 10:58:54 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 10:58:56 [INFO] core.scanner — [SCAN] Scanning 145 symbols (workers=6)
+2026-07-12 11:00:06 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 11:00:06 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 11:00:07 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 11:00:07 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 11:00:07 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 11:00:07 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 11:00:07 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 11:00:07 [WARNING] data.feed — [FEED] HTTP error attempt 1/3: <urlopen error _ssl.c:1063: The handshake operation timed out>
+2026-07-12 11:00:07 [WARNING] data.feed — [FEED] HTTP error attempt 1/3: <urlopen error _ssl.c:1063: The handshake operation timed out>
+2026-07-12 11:00:15 [INFO] core.engine — [ENGINE] Scan complete — 86 signals found
+2026-07-12 11:00:19 [WARNING] data.feed — [FEED] HTTP error attempt 1/3: <urlopen error timed out>
+2026-07-12 11:00:19 [WARNING] data.feed — [FEED] HTTP error attempt 1/3: <urlopen error timed out>
+2026-07-12 11:00:43 [ERROR] data.feed — [FEED] DNS blocked by ISP and DoH resolution also failed.
+  ► Run:  set APEX_USE_DOH=1  then restart
+  ► Or:   python check_network.py --fix-dns
+  ► Or:   change Windows DNS to 1.1.1.1 / 8.8.8.8
+  ► Or:   use a VPN
+2026-07-12 11:00:43 [ERROR] data.feed — [FEED] DNS blocked by ISP and DoH resolution also failed.
+  ► Run:  set APEX_USE_DOH=1  then restart
+  ► Or:   python check_network.py --fix-dns
+  ► Or:   change Windows DNS to 1.1.1.1 / 8.8.8.8
+  ► Or:   use a VPN
+2026-07-12 11:00:43 [ERROR] data.feed — [FEED] DNS blocked by ISP and DoH resolution also failed.
+  ► Run:  set APEX_USE_DOH=1  then restart
+  ► Or:   python check_network.py --fix-dns
+  ► Or:   change Windows DNS to 1.1.1.1 / 8.8.8.8
+  ► Or:   use a VPN
+2026-07-12 11:00:43 [ERROR] data.feed — [FEED] DNS blocked by ISP and DoH resolution also failed.
+  ► Run:  set APEX_USE_DOH=1  then restart
+  ► Or:   python check_network.py --fix-dns
+  ► Or:   change Windows DNS to 1.1.1.1 / 8.8.8.8
+  ► Or:   use a VPN
+2026-07-12 11:00:43 [ERROR] data.feed — [FEED] DNS blocked by ISP and DoH resolution also failed.
+  ► Run:  set APEX_USE_DOH=1  then restart
+  ► Or:   python check_network.py --fix-dns
+  ► Or:   change Windows DNS to 1.1.1.1 / 8.8.8.8
+  ► Or:   use a VPN
+2026-07-12 11:00:43 [ERROR] data.feed — [FEED] DNS blocked by ISP and DoH resolution also failed.
+  ► Run:  set APEX_USE_DOH=1  then restart
+  ► Or:   python check_network.py --fix-dns
+  ► Or:   change Windows DNS to 1.1.1.1 / 8.8.8.8
+  ► Or:   use a VPN
+2026-07-12 11:00:43 [ERROR] data.feed — [FEED] DNS blocked by ISP and DoH resolution also failed.
+  ► Run:  set APEX_USE_DOH=1  then restart
+  ► Or:   python check_network.py --fix-dns
+  ► Or:   change Windows DNS to 1.1.1.1 / 8.8.8.8
+  ► Or:   use a VPN
+2026-07-12 11:00:43 [ERROR] data.feed — [FEED] DNS blocked by ISP and DoH resolution also failed.
+  ► Run:  set APEX_USE_DOH=1  then restart
+  ► Or:   python check_network.py --fix-dns
+  ► Or:   change Windows DNS to 1.1.1.1 / 8.8.8.8
+  ► Or:   use a VPN
+2026-07-12 11:00:43 [ERROR] data.feed — [FEED] DNS blocked by ISP and DoH resolution also failed.
+  ► Run:  set APEX_USE_DOH=1  then restart
+  ► Or:   python check_network.py --fix-dns
+  ► Or:   change Windows DNS to 1.1.1.1 / 8.8.8.8
+  ► Or:   use a VPN
+2026-07-12 11:00:43 [ERROR] data.feed — [FEED] DNS blocked by ISP and DoH resolution also failed.
+  ► Run:  set APEX_USE_DOH=1  then restart
+  ► Or:   python check_network.py --fix-dns
+  ► Or:   change Windows DNS to 1.1.1.1 / 8.8.8.8
+  ► Or:   use a VPN
+2026-07-12 11:00:55 [ERROR] data.feed — [FEED] DNS blocked by ISP and DoH resolution also failed.
+  ► Run:  set APEX_USE_DOH=1  then restart
+  ► Or:   python check_network.py --fix-dns
+  ► Or:   change Windows DNS to 1.1.1.1 / 8.8.8.8
+  ► Or:   use a VPN
+2026-07-12 11:00:55 [ERROR] data.feed — [FEED] DNS blocked by ISP and DoH resolution also failed.
+  ► Run:  set APEX_USE_DOH=1  then restart
+  ► Or:   python check_network.py --fix-dns
+  ► Or:   change Windows DNS to 1.1.1.1 / 8.8.8.8
+  ► Or:   use a VPN
+2026-07-12 11:00:56 [WARNING] data.feed — [FEED] DNS error on attempt 2/3: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-07-12 11:00:56 [WARNING] data.feed — [FEED] DNS error on attempt 3/3: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-07-12 11:00:56 [WARNING] data.feed — [FEED] DNS error on attempt 3/3: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-07-12 11:00:56 [WARNING] data.feed — [FEED] DNS error on attempt 3/3: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-07-12 11:00:56 [WARNING] data.feed — [FEED] DNS error on attempt 3/3: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-07-12 11:00:56 [WARNING] data.feed — [FEED] DNS error on attempt 3/3: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-07-12 11:00:56 [WARNING] data.feed — [FEED] DNS error on attempt 3/3: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-07-12 11:00:56 [WARNING] data.feed — [FEED] DNS error on attempt 3/3: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-07-12 11:00:56 [WARNING] data.feed — [FEED] DNS error on attempt 3/3: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-07-12 11:00:56 [WARNING] data.feed — [FEED] DNS error on attempt 3/3: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-07-12 11:01:10 [WARNING] data.feed — [FEED] DNS error on attempt 3/3: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-07-12 11:01:10 [WARNING] data.feed — [FEED] DNS error on attempt 3/3: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-07-12 11:01:10 [WARNING] data.feed — [FEED] DNS error on attempt 3/3: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-07-12 11:01:10 [ERROR] data.feed — [FEED] Ticker fetch failed (MEXC #1): <urlopen error [Errno 11001] getaddrinfo failed>
+2026-07-12 11:01:31 [ERROR] data.feed — [FEED] DNS blocked by ISP and DoH resolution also failed.
+  ► Run:  set APEX_USE_DOH=1  then restart
+  ► Or:   python check_network.py --fix-dns
+  ► Or:   change Windows DNS to 1.1.1.1 / 8.8.8.8
+  ► Or:   use a VPN
+2026-07-12 11:01:31 [ERROR] data.feed — [FEED] DNS blocked by ISP and DoH resolution also failed.
+  ► Run:  set APEX_USE_DOH=1  then restart
+  ► Or:   python check_network.py --fix-dns
+  ► Or:   change Windows DNS to 1.1.1.1 / 8.8.8.8
+  ► Or:   use a VPN
+2026-07-12 11:01:31 [ERROR] data.feed — [FEED] DNS blocked by ISP and DoH resolution also failed.
+  ► Run:  set APEX_USE_DOH=1  then restart
+  ► Or:   python check_network.py --fix-dns
+  ► Or:   change Windows DNS to 1.1.1.1 / 8.8.8.8
+  ► Or:   use a VPN
+2026-07-12 11:01:31 [ERROR] data.feed — [FEED] DNS blocked by ISP and DoH resolution also failed.
+  ► Run:  set APEX_USE_DOH=1  then restart
+  ► Or:   python check_network.py --fix-dns
+  ► Or:   change Windows DNS to 1.1.1.1 / 8.8.8.8
+  ► Or:   use a VPN
+2026-07-12 11:01:31 [ERROR] data.feed — [FEED] DNS blocked by ISP and DoH resolution also failed.
+  ► Run:  set APEX_USE_DOH=1  then restart
+  ► Or:   python check_network.py --fix-dns
+  ► Or:   change Windows DNS to 1.1.1.1 / 8.8.8.8
+  ► Or:   use a VPN
+2026-07-12 11:01:31 [ERROR] data.feed — [FEED] DNS blocked by ISP and DoH resolution also failed.
+  ► Run:  set APEX_USE_DOH=1  then restart
+  ► Or:   python check_network.py --fix-dns
+  ► Or:   change Windows DNS to 1.1.1.1 / 8.8.8.8
+  ► Or:   use a VPN
+2026-07-12 11:01:31 [ERROR] data.feed — [FEED] DNS blocked by ISP and DoH resolution also failed.
+  ► Run:  set APEX_USE_DOH=1  then restart
+  ► Or:   python check_network.py --fix-dns
+  ► Or:   change Windows DNS to 1.1.1.1 / 8.8.8.8
+  ► Or:   use a VPN
+2026-07-12 11:01:44 [WARNING] data.feed — [FEED] DNS error on attempt 2/3: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-07-12 11:01:44 [WARNING] data.feed — [FEED] DNS error on attempt 2/3: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-07-12 11:01:44 [WARNING] data.feed — [FEED] DNS error on attempt 2/3: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-07-12 11:01:44 [WARNING] data.feed — [FEED] DNS error on attempt 2/3: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-07-12 11:01:44 [WARNING] data.feed — [FEED] DNS error on attempt 2/3: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-07-12 11:01:44 [WARNING] data.feed — [FEED] DNS error on attempt 2/3: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-07-12 11:01:44 [WARNING] data.feed — [FEED] DNS error on attempt 2/3: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-07-12 11:01:45 [ERROR] data.feed — [FEED] DNS blocked by ISP and DoH resolution also failed.
+  ► Run:  set APEX_USE_DOH=1  then restart
+  ► Or:   python check_network.py --fix-dns
+  ► Or:   change Windows DNS to 1.1.1.1 / 8.8.8.8
+  ► Or:   use a VPN
+2026-07-12 11:01:45 [ERROR] data.feed — [FEED] DNS blocked by ISP and DoH resolution also failed.
+  ► Run:  set APEX_USE_DOH=1  then restart
+  ► Or:   python check_network.py --fix-dns
+  ► Or:   change Windows DNS to 1.1.1.1 / 8.8.8.8
+  ► Or:   use a VPN
+2026-07-12 11:01:45 [ERROR] data.feed — [FEED] DNS blocked by ISP and DoH resolution also failed.
+  ► Run:  set APEX_USE_DOH=1  then restart
+  ► Or:   python check_network.py --fix-dns
+  ► Or:   change Windows DNS to 1.1.1.1 / 8.8.8.8
+  ► Or:   use a VPN
+2026-07-12 11:01:45 [ERROR] data.feed — [FEED] DNS blocked by ISP and DoH resolution also failed.
+  ► Run:  set APEX_USE_DOH=1  then restart
+  ► Or:   python check_network.py --fix-dns
+  ► Or:   change Windows DNS to 1.1.1.1 / 8.8.8.8
+  ► Or:   use a VPN
+2026-07-12 11:01:45 [ERROR] data.feed — [FEED] DNS blocked by ISP and DoH resolution also failed.
+  ► Run:  set APEX_USE_DOH=1  then restart
+  ► Or:   python check_network.py --fix-dns
+  ► Or:   change Windows DNS to 1.1.1.1 / 8.8.8.8
+  ► Or:   use a VPN
+2026-07-12 11:01:45 [ERROR] data.feed — [FEED] DNS blocked by ISP and DoH resolution also failed.
+  ► Run:  set APEX_USE_DOH=1  then restart
+  ► Or:   python check_network.py --fix-dns
+  ► Or:   change Windows DNS to 1.1.1.1 / 8.8.8.8
+  ► Or:   use a VPN
+2026-07-12 11:01:45 [ERROR] data.feed — [FEED] DNS blocked by ISP and DoH resolution also failed.
+  ► Run:  set APEX_USE_DOH=1  then restart
+  ► Or:   python check_network.py --fix-dns
+  ► Or:   change Windows DNS to 1.1.1.1 / 8.8.8.8
+  ► Or:   use a VPN
+2026-07-12 11:01:45 [ERROR] data.feed — [FEED] DNS blocked by ISP and DoH resolution also failed.
+  ► Run:  set APEX_USE_DOH=1  then restart
+  ► Or:   python check_network.py --fix-dns
+  ► Or:   change Windows DNS to 1.1.1.1 / 8.8.8.8
+  ► Or:   use a VPN
+2026-07-12 11:01:45 [ERROR] data.feed — [FEED] DNS blocked by ISP and DoH resolution also failed.
+  ► Run:  set APEX_USE_DOH=1  then restart
+  ► Or:   python check_network.py --fix-dns
+  ► Or:   change Windows DNS to 1.1.1.1 / 8.8.8.8
+  ► Or:   use a VPN
+2026-07-12 11:01:45 [ERROR] data.feed — [FEED] DNS blocked by ISP and DoH resolution also failed.
+  ► Run:  set APEX_USE_DOH=1  then restart
+  ► Or:   python check_network.py --fix-dns
+  ► Or:   change Windows DNS to 1.1.1.1 / 8.8.8.8
+  ► Or:   use a VPN
+2026-07-12 11:01:48 [INFO] agent.watchdog — [WATCHDOG] Stopped by user.
+2026-07-12 11:07:44 [INFO] core.engine — ═══ APEX Terminal  mode=PAPER  exchange=MEXC ═══
+2026-07-12 11:07:44 [INFO] data.feed — [FEED] Exchange: MEXC
+2026-07-12 11:07:44 [INFO] execution.paper_executor — [PAPER] Restored state — balance=10000.00  open=1  prev_closed=0
+2026-07-12 11:07:44 [INFO] execution.router — [ROUTER] Paper mode — simulated fills
+2026-07-12 11:07:44 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\9e13dcc5e_apex_terminal_v21_final\apex_terminal\data_store\trade_journal.csv
+2026-07-12 11:07:44 [INFO] utils.equity_tracker — [EQUITY] Baseline: 10000.00 (date: 2026-07-12)
+2026-07-12 11:07:44 [INFO] core.engine — [ENGINE] Balance: 10000.00 | Mode: PAPER | Exchange: MEXC
+2026-07-12 11:07:44 [INFO] webapp_server — [API] Server running at http://0.0.0.0:8080
+2026-07-12 11:07:44 [INFO] apex — ==============================================
+2026-07-12 11:07:44 [INFO] apex —   Dashboard running →  http://localhost:8080  
+2026-07-12 11:07:44 [INFO] apex — ==============================================
+2026-07-12 11:07:44 [INFO] apex — Exchange status, the Watchdog's patch queue, and connected accounts are all there — the console log only tells part of the story.
+2026-07-12 11:07:44 [INFO] core.engine — [ENGINE] Running under Watchdog supervision (poll=10s). Ctrl+C to stop.
+2026-07-12 11:07:44 [INFO] agent.watchdog — [WATCHDOG] Supervising engine. poll=10s
+2026-07-12 11:07:44 [INFO] core.engine — ── Cycle 1 [LONDON] ──
+2026-07-12 11:07:44 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 11:07:50 [INFO] core.scanner — [SCAN] Scanning 140 symbols (workers=6)
+2026-07-12 11:08:10 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 11:08:10 [WARNING] data.feed — [FEED] HTTP error attempt 1/3: <urlopen error _ssl.c:1063: The handshake operation timed out>
+2026-07-12 11:08:16 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 11:08:18 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 11:08:34 [WARNING] data.feed — [FEED] HTTP error attempt 2/3: <urlopen error _ssl.c:1063: The handshake operation timed out>
+2026-07-12 11:08:39 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 11:09:48 [WARNING] data.feed — [FEED] HTTP error attempt 1/3: <urlopen error _ssl.c:1063: The handshake operation timed out>
+2026-07-12 11:10:42 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 11:10:42 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 11:10:42 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 11:10:42 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 11:10:42 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 11:10:42 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 11:10:55 [INFO] data.feed — [FEED] ISP DNS blocked — using DoH IP 92.123.135.144 for api.mexc.com
+2026-07-12 11:10:55 [INFO] data.feed — [FEED] ISP DNS blocked — using DoH IP 92.123.135.135 for api.mexc.com
+2026-07-12 11:10:55 [INFO] data.feed — [FEED] ISP DNS blocked — using DoH IP 92.123.135.135 for api.mexc.com
+2026-07-12 11:10:55 [INFO] data.feed — [FEED] ISP DNS blocked — using DoH IP 92.123.135.144 for api.mexc.com
+2026-07-12 11:10:55 [INFO] data.feed — [FEED] ISP DNS blocked — using DoH IP 92.123.135.144 for api.mexc.com
+2026-07-12 11:10:56 [INFO] data.feed — [FEED] ISP DNS blocked — using DoH IP 92.123.135.144 for api.mexc.com
+2026-07-12 11:11:04 [WARNING] data.feed — [FEED] DoH IP attempt failed: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-12 11:11:04 [WARNING] data.feed — [FEED] DoH IP attempt failed: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-12 11:11:04 [WARNING] data.feed — [FEED] DoH IP attempt failed: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-12 11:11:05 [WARNING] data.feed — [FEED] DoH IP attempt failed: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-12 11:11:11 [WARNING] data.feed — [FEED] DoH IP attempt failed: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-12 11:11:21 [INFO] core.engine — [ENGINE] Scan complete — 67 signals found
+2026-07-12 11:11:27 [INFO] agent.watchdog — [WATCHDOG] Stopped by user.
+2026-07-12 11:13:33 [INFO] core.engine — ═══ APEX Terminal  mode=PAPER  exchange=MEXC ═══
+2026-07-12 11:13:33 [INFO] data.feed — [FEED] Exchange: MEXC
+2026-07-12 11:13:33 [INFO] execution.paper_executor — [PAPER] Restored state — balance=10000.00  open=1  prev_closed=0
+2026-07-12 11:13:33 [INFO] execution.router — [ROUTER] Paper mode — simulated fills
+2026-07-12 11:13:33 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\9e13dcc5e_apex_terminal_v21_final\apex_terminal\data_store\trade_journal.csv
+2026-07-12 11:13:33 [INFO] utils.equity_tracker — [EQUITY] Baseline: 10000.00 (date: 2026-07-12)
+2026-07-12 11:13:33 [INFO] core.engine — [ENGINE] Balance: 10000.00 | Mode: PAPER | Exchange: MEXC
+2026-07-12 11:13:33 [INFO] webapp_server — [API] Server running at http://0.0.0.0:8080
+2026-07-12 11:13:33 [INFO] apex — ==============================================
+2026-07-12 11:13:33 [INFO] apex —   Dashboard running →  http://localhost:8080  
+2026-07-12 11:13:33 [INFO] apex — ==============================================
+2026-07-12 11:13:33 [INFO] apex — Exchange status, the Watchdog's patch queue, and connected accounts are all there — the console log only tells part of the story.
+2026-07-12 11:13:33 [INFO] core.engine — [ENGINE] Running under Watchdog supervision (poll=10s). Ctrl+C to stop.
+2026-07-12 11:13:34 [INFO] agent.watchdog — [WATCHDOG] Supervising engine. poll=10s
+2026-07-12 11:13:34 [INFO] core.engine — ── Cycle 1 [LONDON] ──
+2026-07-12 11:13:34 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 11:13:46 [INFO] core.scanner — [SCAN] Scanning 141 symbols (workers=6)
+2026-07-12 11:15:01 [INFO] data.feed — [FEED] Exchange: MEXC
+2026-07-12 11:15:01 [INFO] backtest.backtester — [BT] Fetching 500 bars for BTC-USDT-SWAP 1H
+2026-07-12 11:15:34 [INFO] data.feed — [FEED] Exchange: MEXC
+2026-07-12 11:15:34 [INFO] backtest.backtester — [BT] Fetching 500 bars for BTC-USDT-SWAP 1H
+2026-07-12 11:16:08 [INFO] core.engine — [ENGINE] Scan complete — 80 signals found
+2026-07-12 11:16:09 [INFO] backtest.backtester — [BT] Done — trades=79 win_rate=67.1% pnl=636.00 max_dd=3.9%
+2026-07-12 11:16:21 [INFO] data.feed — [FEED] Exchange: MEXC
+2026-07-12 11:16:21 [INFO] backtest.backtester — [BT] Fetching 500 bars for BTC-USDT-SWAP 1H
+2026-07-12 11:16:26 [INFO] core.engine — [ENGINE] 20 candidates evaluated, 0 trades entered — top reasons: no_strategy_agreement×19, volatility_gate_blocked×1
+2026-07-12 11:16:31 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\9e13dcc5e_apex_terminal_v21_final\apex_terminal\data_store\trade_journal.csv
+2026-07-12 11:16:31 [INFO] core.engine — ── Cycle 2 [LONDON] ──
+2026-07-12 11:16:31 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 11:16:40 [INFO] core.scanner — [SCAN] Scanning 141 symbols (workers=6)
+2026-07-12 11:18:48 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 11:18:57 [INFO] core.engine — [ENGINE] Scan complete — 79 signals found
+2026-07-12 11:19:15 [INFO] core.engine — [ENGINE] 20 candidates evaluated, 0 trades entered — top reasons: no_strategy_agreement×18, volatility_gate_blocked×2
+2026-07-12 11:19:20 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\9e13dcc5e_apex_terminal_v21_final\apex_terminal\data_store\trade_journal.csv
+2026-07-12 11:19:20 [INFO] core.engine — ── Cycle 3 [LONDON] ──
+2026-07-12 11:19:20 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 11:19:24 [INFO] core.scanner — [SCAN] Scanning 141 symbols (workers=6)
+2026-07-12 11:19:38 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 11:20:23 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 11:21:05 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 11:21:57 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 11:22:06 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 11:22:14 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 11:22:15 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 11:22:45 [INFO] core.engine — [ENGINE] Scan complete — 64 signals found
+2026-07-12 11:23:14 [INFO] core.engine — [ENGINE] 20 candidates evaluated, 0 trades entered — top reasons: no_strategy_agreement×19, volatility_gate_blocked×1
+2026-07-12 11:23:20 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\9e13dcc5e_apex_terminal_v21_final\apex_terminal\data_store\trade_journal.csv
+2026-07-12 11:23:20 [INFO] core.engine — ── Cycle 4 [LONDON] ──
+2026-07-12 11:23:20 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 11:23:25 [INFO] core.scanner — [SCAN] Scanning 141 symbols (workers=6)
+2026-07-12 11:25:27 [INFO] core.engine — [ENGINE] Scan complete — 82 signals found
+2026-07-12 11:25:44 [INFO] strategies.aggregator — [AGG] ✓ CONSENSUS BUY | score=0.400 | margin=0.400 | strategies=['macd_ema', 'fib_retracement']
+2026-07-12 11:25:44 [INFO] core.engine — [ENGINE] FARTCOIN_USDT — adaptive risk ×0.72 (dd=0.0%, streak=0, conf=0.400) → risk_pct=0.0072
+2026-07-12 11:25:44 [INFO] core.engine — [ENGINE] ➤ BUY FARTCOIN_USDT macd_ema, fib_retracement | qty=22930.879831 price=0.151620 sl=0.148483 tp1=0.153711 tp2=0.155803 tp3=0.157894 rr=1.33
+2026-07-12 11:25:44 [INFO] execution.paper_executor — [PAPER] OPEN BUY FARTCOIN_USDT 22930.879831 @ 0.151620 | SL=0.148483 TP1=0.153711 TP2=0.155803 TP3=0.157894 | id=7615bbb7
+2026-07-12 11:25:48 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\9e13dcc5e_apex_terminal_v21_final\apex_terminal\data_store\trade_journal.csv
+2026-07-12 11:25:48 [INFO] core.engine — ── Cycle 5 [LONDON] ──
+2026-07-12 11:25:48 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 11:25:52 [INFO] core.scanner — [SCAN] Scanning 141 symbols (workers=6)
+2026-07-12 11:27:47 [INFO] core.engine — [ENGINE] Scan complete — 80 signals found
+2026-07-12 11:28:05 [INFO] core.engine — [ENGINE] 19 candidates evaluated, 0 trades entered — top reasons: no_strategy_agreement×17, already_open×1, correlation_blocked_dynamic×1
+2026-07-12 11:28:09 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\9e13dcc5e_apex_terminal_v21_final\apex_terminal\data_store\trade_journal.csv
+2026-07-12 11:28:10 [INFO] core.engine — ── Cycle 6 [LONDON] ──
+2026-07-12 11:28:10 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 11:28:13 [INFO] core.scanner — [SCAN] Scanning 141 symbols (workers=6)
+2026-07-12 11:30:34 [INFO] agent.watchdog — [WATCHDOG] Stopped by user.
+2026-07-12 11:30:35 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 12:07:36 [INFO] core.engine — ═══ APEX Terminal  mode=PAPER  exchange=MEXC ═══
+2026-07-12 12:07:36 [INFO] data.feed — [FEED] Exchange: MEXC
+2026-07-12 12:07:37 [INFO] execution.paper_executor — [PAPER] Restored state — balance=10000.00  open=2  prev_closed=0
+2026-07-12 12:07:37 [INFO] execution.router — [ROUTER] Paper mode — simulated fills
+2026-07-12 12:07:37 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\9e13dcc5e_apex_terminal_v21_final\apex_terminal\data_store\trade_journal.csv
+2026-07-12 12:07:37 [INFO] utils.equity_tracker — [EQUITY] Baseline: 10000.00 (date: 2026-07-12)
+2026-07-12 12:07:37 [INFO] core.engine — [ENGINE] Balance: 10000.00 | Mode: PAPER | Exchange: MEXC
+2026-07-12 12:07:40 [INFO] webapp_server — [API] Server running at http://0.0.0.0:8080
+2026-07-12 12:07:41 [INFO] apex — ==============================================
+2026-07-12 12:07:41 [INFO] apex —   Dashboard running →  http://localhost:8080  
+2026-07-12 12:07:41 [INFO] apex — ==============================================
+2026-07-12 12:07:41 [INFO] apex — Exchange status, the Watchdog's patch queue, and connected accounts are all there — the console log only tells part of the story.
+2026-07-12 12:07:41 [INFO] core.engine — [ENGINE] Running under Watchdog supervision (poll=10s). Ctrl+C to stop.
+2026-07-12 12:07:41 [INFO] agent.watchdog — [WATCHDOG] Supervising engine. poll=10s
+2026-07-12 12:07:41 [INFO] core.engine — ── Cycle 1 [LONDON] ──
+2026-07-12 12:07:41 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 12:07:41 [ERROR] data.feed — [FEED] DNS blocked by ISP and DoH resolution also failed.
+  ► Run:  set APEX_USE_DOH=1  then restart
+  ► Or:   python check_network.py --fix-dns
+  ► Or:   change Windows DNS to 1.1.1.1 / 8.8.8.8
+  ► Or:   use a VPN
+2026-07-12 12:07:43 [WARNING] data.feed — [FEED] DNS error on attempt 2/3: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-07-12 12:07:47 [WARNING] data.feed — [FEED] DNS error on attempt 3/3: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-07-12 12:07:47 [ERROR] data.feed — [FEED] Ticker fetch failed (MEXC #1): <urlopen error [Errno 11001] getaddrinfo failed>
+2026-07-12 12:07:47 [WARNING] core.scanner — [SCAN] No tickers returned from feed
+2026-07-12 12:07:47 [INFO] core.engine — [ENGINE] Scan complete — 0 signals found
+2026-07-12 12:07:47 [ERROR] data.feed — [FEED] DNS blocked by ISP and DoH resolution also failed.
+  ► Run:  set APEX_USE_DOH=1  then restart
+  ► Or:   python check_network.py --fix-dns
+  ► Or:   change Windows DNS to 1.1.1.1 / 8.8.8.8
+  ► Or:   use a VPN
+2026-07-12 12:07:49 [WARNING] data.feed — [FEED] DNS error on attempt 2/3: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-07-12 12:07:53 [WARNING] data.feed — [FEED] DNS error on attempt 3/3: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-07-12 12:07:53 [ERROR] data.feed — [FEED] Ticker fetch failed (MEXC #2): <urlopen error [Errno 11001] getaddrinfo failed>
+2026-07-12 12:07:54 [ERROR] data.feed — [FEED] DNS blocked by ISP and DoH resolution also failed.
+  ► Run:  set APEX_USE_DOH=1  then restart
+  ► Or:   python check_network.py --fix-dns
+  ► Or:   change Windows DNS to 1.1.1.1 / 8.8.8.8
+  ► Or:   use a VPN
+2026-07-12 12:07:54 [ERROR] data.feed — [FEED] DNS blocked by ISP and DoH resolution also failed.
+  ► Run:  set APEX_USE_DOH=1  then restart
+  ► Or:   python check_network.py --fix-dns
+  ► Or:   change Windows DNS to 1.1.1.1 / 8.8.8.8
+  ► Or:   use a VPN
+2026-07-12 12:07:54 [ERROR] data.feed — [FEED] DNS blocked by ISP and DoH resolution also failed.
+  ► Run:  set APEX_USE_DOH=1  then restart
+  ► Or:   python check_network.py --fix-dns
+  ► Or:   change Windows DNS to 1.1.1.1 / 8.8.8.8
+  ► Or:   use a VPN
+2026-07-12 12:07:54 [ERROR] data.feed — [FEED] DNS blocked by ISP and DoH resolution also failed.
+  ► Run:  set APEX_USE_DOH=1  then restart
+  ► Or:   python check_network.py --fix-dns
+  ► Or:   change Windows DNS to 1.1.1.1 / 8.8.8.8
+  ► Or:   use a VPN
+2026-07-12 12:07:54 [ERROR] data.feed — [FEED] DNS blocked by ISP and DoH resolution also failed.
+  ► Run:  set APEX_USE_DOH=1  then restart
+  ► Or:   python check_network.py --fix-dns
+  ► Or:   change Windows DNS to 1.1.1.1 / 8.8.8.8
+  ► Or:   use a VPN
+2026-07-12 12:07:54 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\9e13dcc5e_apex_terminal_v21_final\apex_terminal\data_store\trade_journal.csv
+2026-07-12 12:07:54 [WARNING] agent.watchdog — [WATCHDOG] Health check failed: feed_reachable — ALL exchanges unreachable
+2026-07-12 12:07:54 [INFO] core.engine — ── Cycle 2 [LONDON] ──
+2026-07-12 12:07:54 [ERROR] data.feed — [FEED] DNS blocked by ISP and DoH resolution also failed.
+  ► Run:  set APEX_USE_DOH=1  then restart
+  ► Or:   python check_network.py --fix-dns
+  ► Or:   change Windows DNS to 1.1.1.1 / 8.8.8.8
+  ► Or:   use a VPN
+2026-07-12 12:07:56 [WARNING] data.feed — [FEED] DNS error on attempt 2/3: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-07-12 12:08:00 [WARNING] data.feed — [FEED] DNS error on attempt 3/3: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-07-12 12:08:00 [ERROR] data.feed — [FEED] Ticker fetch failed (MEXC #3): <urlopen error [Errno 11001] getaddrinfo failed>
+2026-07-12 12:08:00 [WARNING] data.feed — [FEED] MEXC failed (repeated ticker failures) — switching to OKX (set APEX_EXCHANGE=okx to make permanent)
+2026-07-12 12:08:04 [INFO] core.engine — ── Cycle 3 [LONDON] ──
+2026-07-12 12:08:04 [ERROR] data.feed — [FEED] DNS blocked by ISP and DoH resolution also failed.
+  ► Run:  set APEX_USE_DOH=1  then restart
+  ► Or:   python check_network.py --fix-dns
+  ► Or:   change Windows DNS to 1.1.1.1 / 8.8.8.8
+  ► Or:   use a VPN
+2026-07-12 12:08:06 [WARNING] data.feed — [FEED] DNS error on attempt 2/3: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-07-12 12:08:10 [WARNING] data.feed — [FEED] DNS error on attempt 3/3: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-07-12 12:08:10 [ERROR] data.feed — [FEED] Ticker fetch failed (OKX #1): <urlopen error [Errno 11001] getaddrinfo failed>
+2026-07-12 12:11:38 [INFO] core.engine — ═══ APEX Terminal  mode=PAPER  exchange=MEXC ═══
+2026-07-12 12:11:38 [INFO] data.feed — [FEED] Exchange: MEXC
+2026-07-12 12:11:38 [INFO] execution.paper_executor — [PAPER] Fresh account — balance=10000.00
+2026-07-12 12:11:38 [INFO] execution.router — [ROUTER] Paper mode — simulated fills
+2026-07-12 12:11:38 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\352fcc93d_apex_terminal_v21_signal_detail\apex_terminal\data_store\trade_journal.csv
+2026-07-12 12:11:38 [INFO] utils.equity_tracker — [EQUITY] Baseline: 10000.00 (date: 2026-07-12)
+2026-07-12 12:11:38 [INFO] core.engine — [ENGINE] Balance: 10000.00 | Mode: PAPER | Exchange: MEXC
+2026-07-12 12:11:40 [INFO] webapp_server — [API] Server running at http://0.0.0.0:8080
+2026-07-12 12:11:40 [INFO] apex — ==============================================
+2026-07-12 12:11:40 [INFO] apex —   Dashboard running →  http://localhost:8080  
+2026-07-12 12:11:40 [INFO] apex — ==============================================
+2026-07-12 12:11:40 [INFO] apex — Exchange status, the Watchdog's patch queue, and connected accounts are all there — the console log only tells part of the story.
+2026-07-12 12:11:40 [INFO] core.engine — [ENGINE] Running under Watchdog supervision (poll=10s). Ctrl+C to stop.
+2026-07-12 12:11:40 [INFO] agent.watchdog — [WATCHDOG] Supervising engine. poll=10s
+2026-07-12 12:11:40 [INFO] core.engine — ── Cycle 1 [LONDON] ──
+2026-07-12 12:11:40 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 12:11:44 [INFO] core.scanner — [SCAN] Scanning 139 symbols (workers=6)
+2026-07-12 12:12:39 [INFO] core.engine — [ENGINE] Scan complete — 85 signals found
+2026-07-12 12:12:54 [INFO] core.engine — [ENGINE] 20 candidates evaluated, 0 trades entered — top reasons: no_strategy_agreement×17, volatility_gate_blocked×3
+2026-07-12 12:12:58 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\352fcc93d_apex_terminal_v21_signal_detail\apex_terminal\data_store\trade_journal.csv
+2026-07-12 12:12:59 [INFO] core.engine — ── Cycle 2 [LONDON] ──
+2026-07-12 12:12:59 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 12:13:02 [INFO] core.scanner — [SCAN] Scanning 139 symbols (workers=6)
+2026-07-12 12:13:55 [INFO] core.engine — [ENGINE] Scan complete — 82 signals found
+2026-07-12 12:14:06 [INFO] core.engine — [ENGINE] 20 candidates evaluated, 0 trades entered — top reasons: no_strategy_agreement×17, volatility_gate_blocked×3
+2026-07-12 12:14:07 [INFO] core.engine — ── Cycle 3 [LONDON] ──
+2026-07-12 12:14:07 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 12:14:14 [INFO] core.scanner — [SCAN] Scanning 139 symbols (workers=6)
+2026-07-12 12:15:07 [INFO] core.engine — [ENGINE] Scan complete — 78 signals found
+2026-07-12 12:15:20 [INFO] core.engine — [ENGINE] 20 candidates evaluated, 0 trades entered — top reasons: no_strategy_agreement×17, volatility_gate_blocked×3
+2026-07-12 12:15:23 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\352fcc93d_apex_terminal_v21_signal_detail\apex_terminal\data_store\trade_journal.csv
+2026-07-12 12:15:24 [INFO] core.engine — ── Cycle 4 [LONDON] ──
+2026-07-12 12:15:24 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 12:15:28 [INFO] core.scanner — [SCAN] Scanning 139 symbols (workers=6)
+2026-07-12 12:17:12 [INFO] core.engine — [ENGINE] Scan complete — 79 signals found
+2026-07-12 12:17:31 [INFO] core.engine — [ENGINE] 20 candidates evaluated, 0 trades entered — top reasons: no_strategy_agreement×18, volatility_gate_blocked×2
+2026-07-12 12:17:34 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\352fcc93d_apex_terminal_v21_signal_detail\apex_terminal\data_store\trade_journal.csv
+2026-07-12 12:17:34 [INFO] core.engine — ── Cycle 5 [LONDON] ──
+2026-07-12 12:17:34 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 12:17:38 [INFO] core.scanner — [SCAN] Scanning 139 symbols (workers=6)
+2026-07-12 12:18:19 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\352fcc93d_apex_terminal_v21_signal_detail\apex_terminal\data_store\trade_journal.csv
+2026-07-12 12:18:40 [INFO] core.engine — [ENGINE] Scan complete — 81 signals found
+2026-07-12 12:18:50 [INFO] core.engine — [ENGINE] 20 candidates evaluated, 0 trades entered — top reasons: no_strategy_agreement×16, volatility_gate_blocked×4
+2026-07-12 12:18:51 [INFO] core.engine — ── Cycle 6 [LONDON] ──
+2026-07-12 12:18:51 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 12:18:53 [INFO] core.scanner — [SCAN] Scanning 139 symbols (workers=6)
+2026-07-12 12:20:12 [INFO] core.engine — [ENGINE] Scan complete — 79 signals found
+2026-07-12 12:20:30 [INFO] strategies.aggregator — [AGG] ✓ SINGLE-STRATEGY BUY | macd_ema weight=0.280 | scanner=S+
+2026-07-12 12:20:30 [INFO] core.engine — [ENGINE] LINK_USDT — adaptive risk ×0.70 (dd=0.0%, streak=0, conf=0.280) → risk_pct=0.0070
+2026-07-12 12:20:30 [INFO] core.engine — [ENGINE] ➤ BUY LINK_USDT macd_ema [single] | qty=567.565261 price=8.014000 sl=7.940000 tp1=8.063334 tp2=8.112667 tp3=8.162001 rr=1.33
+2026-07-12 12:20:31 [INFO] execution.paper_executor — [PAPER] OPEN BUY LINK_USDT 567.565261 @ 8.014000 | SL=7.940000 TP1=8.063334 TP2=8.112667 TP3=8.162001 | id=9d164b2e
+2026-07-12 12:20:37 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\352fcc93d_apex_terminal_v21_signal_detail\apex_terminal\data_store\trade_journal.csv
+2026-07-12 12:20:37 [INFO] core.engine — ── Cycle 7 [LONDON] ──
+2026-07-12 12:20:37 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 12:20:41 [INFO] core.scanner — [SCAN] Scanning 139 symbols (workers=6)
+2026-07-12 12:21:45 [INFO] core.engine — [ENGINE] Scan complete — 83 signals found
+2026-07-12 12:21:59 [INFO] core.engine — [ENGINE] 19 candidates evaluated, 0 trades entered — top reasons: no_strategy_agreement×13, volatility_gate_blocked×4, correlation_blocked_dynamic×2
+2026-07-12 12:22:00 [INFO] core.engine — ── Cycle 8 [LONDON] ──
+2026-07-12 12:22:00 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 12:22:04 [INFO] core.scanner — [SCAN] Scanning 139 symbols (workers=6)
+2026-07-12 12:22:50 [INFO] data.feed — [FEED] ISP DNS blocked — using DoH IP 92.123.135.144 for api.mexc.com
+2026-07-12 12:22:50 [INFO] data.feed — [FEED] ISP DNS blocked — using DoH IP 92.123.135.144 for api.mexc.com
+2026-07-12 12:22:51 [INFO] data.feed — [FEED] ISP DNS blocked — using DoH IP 92.123.135.144 for api.mexc.com
+2026-07-12 12:22:51 [INFO] data.feed — [FEED] ISP DNS blocked — using DoH IP 92.123.135.144 for api.mexc.com
+2026-07-12 12:22:51 [INFO] data.feed — [FEED] ISP DNS blocked — using DoH IP 92.123.135.135 for api.mexc.com
+2026-07-12 12:22:51 [INFO] data.feed — [FEED] ISP DNS blocked — using DoH IP 92.123.135.144 for api.mexc.com
+2026-07-12 12:22:52 [INFO] data.feed — [FEED] ISP DNS blocked — using DoH IP 92.123.135.144 for api.mexc.com
+2026-07-12 12:22:52 [INFO] data.feed — [FEED] ISP DNS blocked — using DoH IP 92.123.135.144 for api.mexc.com
+2026-07-12 12:22:52 [INFO] data.feed — [FEED] ISP DNS blocked — using DoH IP 92.123.135.144 for api.mexc.com
+2026-07-12 12:22:55 [INFO] data.feed — [FEED] ISP DNS blocked — using DoH IP 92.123.135.135 for api.mexc.com
+2026-07-12 12:26:32 [INFO] core.engine — ═══ APEX Terminal  mode=PAPER  exchange=MEXC ═══
+2026-07-12 12:26:32 [INFO] data.feed — [FEED] Exchange: MEXC
+2026-07-12 12:26:32 [INFO] execution.paper_executor — [PAPER] Restored state — balance=10000.00  open=1  prev_closed=0
+2026-07-12 12:26:32 [INFO] execution.router — [ROUTER] Paper mode — simulated fills
+2026-07-12 12:26:32 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\352fcc93d_apex_terminal_v21_signal_detail\apex_terminal\data_store\trade_journal.csv
+2026-07-12 12:26:32 [INFO] utils.equity_tracker — [EQUITY] Baseline: 10000.00 (date: 2026-07-12)
+2026-07-12 12:26:32 [INFO] core.engine — [ENGINE] Balance: 10000.00 | Mode: PAPER | Exchange: MEXC
+2026-07-12 12:26:32 [INFO] webapp_server — [API] Server running at http://0.0.0.0:8080
+2026-07-12 12:26:32 [INFO] apex — ==============================================
+2026-07-12 12:26:32 [INFO] apex —   Dashboard running →  http://localhost:8080  
+2026-07-12 12:26:32 [INFO] apex — ==============================================
+2026-07-12 12:26:32 [INFO] apex — Exchange status, the Watchdog's patch queue, and connected accounts are all there — the console log only tells part of the story.
+2026-07-12 12:26:33 [INFO] core.engine — [ENGINE] Running under Watchdog supervision (poll=10s). Ctrl+C to stop.
+2026-07-12 12:26:33 [INFO] agent.watchdog — [WATCHDOG] Supervising engine. poll=10s
+2026-07-12 12:26:33 [INFO] core.engine — ── Cycle 1 [LONDON] ──
+2026-07-12 12:26:33 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 12:26:37 [INFO] core.scanner — [SCAN] Scanning 139 symbols (workers=6)
+2026-07-12 12:27:33 [INFO] core.engine — [ENGINE] Scan complete — 80 signals found
+2026-07-12 12:27:44 [INFO] core.engine — [ENGINE] 19 candidates evaluated, 0 trades entered — top reasons: no_strategy_agreement×16, volatility_gate_blocked×3, already_open×1
+2026-07-12 12:27:47 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\352fcc93d_apex_terminal_v21_signal_detail\apex_terminal\data_store\trade_journal.csv
+2026-07-12 12:27:47 [INFO] core.engine — ── Cycle 2 [LONDON] ──
+2026-07-12 12:27:48 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 12:27:52 [INFO] core.scanner — [SCAN] Scanning 139 symbols (workers=6)
+2026-07-12 12:29:24 [INFO] core.engine — [ENGINE] Scan complete — 80 signals found
+2026-07-12 12:29:39 [INFO] core.engine — [ENGINE] 19 candidates evaluated, 0 trades entered — top reasons: no_strategy_agreement×16, volatility_gate_blocked×3, already_open×1
+2026-07-12 12:29:39 [INFO] core.engine — ── Cycle 3 [LONDON] ──
+2026-07-12 12:29:39 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 12:29:42 [INFO] core.scanner — [SCAN] Scanning 139 symbols (workers=6)
+2026-07-12 12:30:56 [INFO] core.engine — [ENGINE] Scan complete — 80 signals found
+2026-07-12 12:31:12 [INFO] core.engine — [ENGINE] 19 candidates evaluated, 0 trades entered — top reasons: no_strategy_agreement×17, volatility_gate_blocked×2, already_open×1
+2026-07-12 12:31:15 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\352fcc93d_apex_terminal_v21_signal_detail\apex_terminal\data_store\trade_journal.csv
+2026-07-12 12:31:16 [INFO] core.engine — ── Cycle 4 [LONDON] ──
+2026-07-12 12:31:16 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 12:31:19 [INFO] core.scanner — [SCAN] Scanning 139 symbols (workers=6)
+2026-07-12 12:33:18 [INFO] core.engine — [ENGINE] Scan complete — 79 signals found
+2026-07-12 12:33:35 [INFO] core.engine — [ENGINE] 19 candidates evaluated, 0 trades entered — top reasons: no_strategy_agreement×17, volatility_gate_blocked×2, already_open×1
+2026-07-12 12:33:39 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\352fcc93d_apex_terminal_v21_signal_detail\apex_terminal\data_store\trade_journal.csv
+2026-07-12 12:33:39 [INFO] core.engine — ── Cycle 5 [LONDON] ──
+2026-07-12 12:33:39 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 12:33:43 [INFO] core.scanner — [SCAN] Scanning 139 symbols (workers=6)
+2026-07-12 12:35:00 [INFO] core.engine — [ENGINE] Scan complete — 84 signals found
+2026-07-12 12:35:19 [INFO] core.engine — [ENGINE] 19 candidates evaluated, 0 trades entered — top reasons: no_strategy_agreement×16, volatility_gate_blocked×3, already_open×1
+2026-07-12 12:35:20 [INFO] core.engine — ── Cycle 6 [LONDON] ──
+2026-07-12 12:35:20 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 12:35:30 [INFO] core.scanner — [SCAN] Scanning 139 symbols (workers=6)
+2026-07-12 12:37:39 [INFO] core.engine — [ENGINE] Scan complete — 74 signals found
+2026-07-12 12:37:50 [INFO] strategies.aggregator — [AGG] ✓ SINGLE-STRATEGY BUY | macd_ema weight=0.280 | scanner=S+
+2026-07-12 12:37:50 [INFO] core.engine — [ENGINE] FARTCOIN_USDT — adaptive risk ×0.70 (dd=0.0%, streak=0, conf=0.280) → risk_pct=0.0070
+2026-07-12 12:37:50 [INFO] core.engine — [ENGINE] ➤ BUY FARTCOIN_USDT macd_ema [single] | qty=13376.894492 price=0.150700 sl=0.147560 tp1=0.152793 tp2=0.154886 tp3=0.156979 rr=1.33
+2026-07-12 12:37:50 [INFO] execution.paper_executor — [PAPER] OPEN BUY FARTCOIN_USDT 13376.894492 @ 0.150700 | SL=0.147560 TP1=0.152793 TP2=0.154886 TP3=0.156979 | id=bc390e0d
+2026-07-12 12:37:57 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\352fcc93d_apex_terminal_v21_signal_detail\apex_terminal\data_store\trade_journal.csv
+2026-07-12 12:37:57 [INFO] core.engine — ── Cycle 7 [LONDON] ──
+2026-07-12 12:37:57 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 12:38:00 [INFO] core.scanner — [SCAN] Scanning 139 symbols (workers=6)
+2026-07-12 12:38:59 [INFO] core.engine — [ENGINE] Scan complete — 81 signals found
+2026-07-12 12:39:08 [INFO] core.engine — [ENGINE] 18 candidates evaluated, 0 trades entered — top reasons: no_strategy_agreement×16, already_open×2, volatility_gate_blocked×2
+2026-07-12 12:39:09 [INFO] core.engine — ── Cycle 8 [LONDON] ──
+2026-07-12 12:39:09 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 12:39:12 [INFO] core.scanner — [SCAN] Scanning 139 symbols (workers=6)
+2026-07-12 12:40:07 [INFO] core.engine — [ENGINE] Scan complete — 84 signals found
+2026-07-12 12:40:18 [INFO] core.engine — [ENGINE] 18 candidates evaluated, 0 trades entered — top reasons: no_strategy_agreement×15, volatility_gate_blocked×3, already_open×2
+2026-07-12 12:40:21 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\352fcc93d_apex_terminal_v21_signal_detail\apex_terminal\data_store\trade_journal.csv
+2026-07-12 12:40:22 [INFO] core.engine — ── Cycle 9 [LONDON] ──
+2026-07-12 12:40:22 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 12:40:24 [INFO] core.scanner — [SCAN] Scanning 139 symbols (workers=6)
+2026-07-12 12:41:28 [INFO] core.engine — [ENGINE] Scan complete — 79 signals found
+2026-07-12 12:41:40 [INFO] core.engine — [ENGINE] 18 candidates evaluated, 0 trades entered — top reasons: no_strategy_agreement×16, already_open×2, volatility_gate_blocked×2
+2026-07-12 12:41:41 [INFO] core.engine — ── Cycle 10 [LONDON] ──
+2026-07-12 12:41:41 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 12:41:44 [INFO] core.scanner — [SCAN] Scanning 139 symbols (workers=6)
+2026-07-12 12:43:00 [INFO] core.engine — [ENGINE] Scan complete — 83 signals found
+2026-07-12 12:43:11 [INFO] core.engine — [ENGINE] 18 candidates evaluated, 0 trades entered — top reasons: no_strategy_agreement×15, volatility_gate_blocked×3, already_open×2
+2026-07-12 12:43:14 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\352fcc93d_apex_terminal_v21_signal_detail\apex_terminal\data_store\trade_journal.csv
+2026-07-12 12:43:14 [INFO] core.engine — ── Cycle 11 [LONDON] ──
+2026-07-12 12:43:14 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 12:43:17 [INFO] core.scanner — [SCAN] Scanning 139 symbols (workers=6)
+2026-07-12 12:44:09 [INFO] core.engine — [ENGINE] Scan complete — 84 signals found
+2026-07-12 12:44:23 [INFO] core.engine — [ENGINE] 18 candidates evaluated, 0 trades entered — top reasons: no_strategy_agreement×15, volatility_gate_blocked×3, already_open×2
+2026-07-12 12:44:23 [INFO] core.engine — ── Cycle 12 [LONDON] ──
+2026-07-12 12:44:23 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 12:44:26 [INFO] core.scanner — [SCAN] Scanning 139 symbols (workers=6)
+2026-07-12 12:45:22 [INFO] core.engine — [ENGINE] Scan complete — 81 signals found
+2026-07-12 12:45:32 [INFO] core.engine — [ENGINE] 18 candidates evaluated, 0 trades entered — top reasons: no_strategy_agreement×15, volatility_gate_blocked×3, already_open×2
+2026-07-12 12:45:34 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\352fcc93d_apex_terminal_v21_signal_detail\apex_terminal\data_store\trade_journal.csv
+2026-07-12 12:45:35 [INFO] core.engine — ── Cycle 13 [LONDON] ──
+2026-07-12 12:45:35 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 12:45:38 [INFO] core.scanner — [SCAN] Scanning 139 symbols (workers=6)
+2026-07-12 12:46:33 [INFO] core.engine — [ENGINE] Scan complete — 81 signals found
+2026-07-12 12:46:44 [INFO] core.engine — [ENGINE] 18 candidates evaluated, 0 trades entered — top reasons: no_strategy_agreement×15, volatility_gate_blocked×3, already_open×2
+2026-07-12 12:46:45 [INFO] core.engine — ── Cycle 14 [LONDON] ──
+2026-07-12 12:46:45 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 12:46:48 [INFO] core.scanner — [SCAN] Scanning 139 symbols (workers=6)
+2026-07-12 12:47:39 [INFO] core.engine — [ENGINE] Scan complete — 81 signals found
+2026-07-12 12:47:49 [INFO] core.engine — [ENGINE] 18 candidates evaluated, 0 trades entered — top reasons: no_strategy_agreement×15, volatility_gate_blocked×3, already_open×2
+2026-07-12 12:47:52 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\352fcc93d_apex_terminal_v21_signal_detail\apex_terminal\data_store\trade_journal.csv
+2026-07-12 12:47:53 [INFO] core.engine — ── Cycle 15 [LONDON] ──
+2026-07-12 12:47:53 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 12:47:56 [INFO] core.scanner — [SCAN] Scanning 139 symbols (workers=6)
+2026-07-12 12:48:51 [INFO] core.engine — [ENGINE] Scan complete — 82 signals found
+2026-07-12 12:49:01 [INFO] core.engine — [ENGINE] 18 candidates evaluated, 0 trades entered — top reasons: no_strategy_agreement×15, volatility_gate_blocked×3, already_open×2
+2026-07-12 12:49:01 [INFO] core.engine — ── Cycle 16 [LONDON] ──
+2026-07-12 12:49:01 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 12:49:05 [INFO] core.scanner — [SCAN] Scanning 139 symbols (workers=6)
+2026-07-12 12:50:02 [INFO] core.engine — [ENGINE] Scan complete — 86 signals found
+2026-07-12 12:50:15 [INFO] core.engine — [ENGINE] 18 candidates evaluated, 0 trades entered — top reasons: no_strategy_agreement×15, volatility_gate_blocked×3, already_open×2
+2026-07-12 12:50:18 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\352fcc93d_apex_terminal_v21_signal_detail\apex_terminal\data_store\trade_journal.csv
+2026-07-12 12:50:18 [INFO] core.engine — ── Cycle 17 [LONDON] ──
+2026-07-12 12:50:18 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 12:50:21 [INFO] core.scanner — [SCAN] Scanning 139 symbols (workers=6)
+2026-07-12 12:51:12 [INFO] core.engine — [ENGINE] Scan complete — 86 signals found
+2026-07-12 12:51:21 [INFO] core.engine — [ENGINE] 18 candidates evaluated, 0 trades entered — top reasons: no_strategy_agreement×16, already_open×2, volatility_gate_blocked×2
+2026-07-12 12:51:22 [INFO] core.engine — ── Cycle 18 [LONDON] ──
+2026-07-12 12:51:22 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 12:51:25 [INFO] core.scanner — [SCAN] Scanning 139 symbols (workers=6)
+2026-07-12 12:52:18 [INFO] core.engine — [ENGINE] Scan complete — 84 signals found
+2026-07-12 12:52:34 [INFO] core.engine — [ENGINE] 18 candidates evaluated, 0 trades entered — top reasons: no_strategy_agreement×16, already_open×2, volatility_gate_blocked×2
+2026-07-12 12:52:37 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\352fcc93d_apex_terminal_v21_signal_detail\apex_terminal\data_store\trade_journal.csv
+2026-07-12 12:52:37 [INFO] core.engine — ── Cycle 19 [LONDON] ──
+2026-07-12 12:52:37 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 12:52:40 [INFO] core.scanner — [SCAN] Scanning 139 symbols (workers=6)
+2026-07-12 12:53:52 [INFO] core.engine — [ENGINE] Scan complete — 85 signals found
+2026-07-12 12:54:12 [INFO] core.engine — [ENGINE] 18 candidates evaluated, 0 trades entered — top reasons: no_strategy_agreement×15, already_open×2, volatility_gate_blocked×2
+2026-07-12 12:54:12 [INFO] core.engine — ── Cycle 20 [LONDON] ──
+2026-07-12 12:54:13 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 12:54:15 [INFO] core.scanner — [SCAN] Scanning 139 symbols (workers=6)
+2026-07-12 12:55:12 [INFO] core.engine — [ENGINE] Scan complete — 87 signals found
+2026-07-12 12:55:23 [INFO] core.engine — [ENGINE] 18 candidates evaluated, 0 trades entered — top reasons: no_strategy_agreement×15, already_open×2, volatility_gate_blocked×2
+2026-07-12 12:55:25 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\352fcc93d_apex_terminal_v21_signal_detail\apex_terminal\data_store\trade_journal.csv
+2026-07-12 12:55:26 [INFO] core.engine — ── Cycle 21 [LONDON] ──
+2026-07-12 12:55:26 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 12:55:28 [INFO] core.scanner — [SCAN] Scanning 139 symbols (workers=6)
+2026-07-12 12:56:28 [INFO] core.engine — [ENGINE] Scan complete — 83 signals found
+2026-07-12 12:56:39 [INFO] core.engine — [ENGINE] 18 candidates evaluated, 0 trades entered — top reasons: no_strategy_agreement×15, already_open×2, volatility_gate_blocked×2
+2026-07-12 12:56:40 [INFO] core.engine — ── Cycle 22 [LONDON] ──
+2026-07-12 12:56:40 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 12:56:43 [INFO] core.scanner — [SCAN] Scanning 139 symbols (workers=6)
+2026-07-12 12:57:19 [INFO] agent.watchdog — [WATCHDOG] Stopped by user.
+2026-07-12 15:54:46 [INFO] core.engine — ═══ APEX Terminal  mode=PAPER  exchange=MEXC ═══
+2026-07-12 15:54:46 [INFO] data.feed — [FEED] Exchange: MEXC
+2026-07-12 15:54:46 [INFO] execution.paper_executor — [PAPER] Restored state — balance=10000.00  open=2  prev_closed=0
+2026-07-12 15:54:46 [INFO] execution.router — [ROUTER] Paper mode — simulated fills
+2026-07-12 15:54:46 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\352fcc93d_apex_terminal_v21_signal_detail\apex_terminal\data_store\trade_journal.csv
+2026-07-12 15:54:46 [INFO] utils.equity_tracker — [EQUITY] Baseline: 10000.00 (date: 2026-07-12)
+2026-07-12 15:54:46 [INFO] learning.self_learner — [LEARNER] Loaded from disk — weights: {'macd_ema': 0.28, 'rsi_reversal': 0.22, 'breakout': 0.22, 'scalp': 0.16, 'fib_retracement': 0.12}
+2026-07-12 15:54:46 [INFO] core.engine — [ENGINE] Balance: 10000.00 | Mode: PAPER | Exchange: MEXC
+2026-07-12 15:54:46 [INFO] webapp_server — [API] Server running at http://0.0.0.0:8080
+2026-07-12 15:54:46 [INFO] apex — ==============================================
+2026-07-12 15:54:46 [INFO] apex —   Dashboard running →  http://localhost:8080  
+2026-07-12 15:54:46 [INFO] apex — ==============================================
+2026-07-12 15:54:46 [INFO] apex — Exchange status, the Watchdog's patch queue, and connected accounts are all there — the console log only tells part of the story.
+2026-07-12 15:54:47 [INFO] core.engine — [ENGINE] Running under Watchdog supervision (poll=10s). Ctrl+C to stop.
+2026-07-12 15:54:47 [INFO] agent.watchdog — [WATCHDOG] Supervising engine. poll=10s
+2026-07-12 15:54:47 [INFO] core.engine — ── Cycle 1 [LONDON/NEW_YORK] ──
+2026-07-12 15:54:47 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 15:54:50 [INFO] core.scanner — [SCAN] Scanning 136 symbols (workers=6)
+2026-07-12 15:55:45 [INFO] core.engine — [ENGINE] Scan complete — 90 signals found
+2026-07-12 15:55:47 [INFO] risk.tp_ladder — [TP_LADDER] LINK_USDT 9d164b2e — TP1 hit @ 8.090000 (target 8.063334)
+2026-07-12 15:55:47 [INFO] execution.paper_executor — [PAPER] PARTIAL CLOSE 9d164b2e 227.026104 @ 8.090000 | PnL=17.2540
+2026-07-12 15:55:47 [INFO] core.engine — [ENGINE] LINK_USDT TP1 — closed 227.026104 @ 8.090000 pnl=17.2540, SL -> 8.014010
+2026-07-12 15:55:58 [INFO] strategies.aggregator — [AGG] ✓ SINGLE-STRATEGY BUY | macd_ema weight=0.280 | scanner=S+
+2026-07-12 15:55:58 [INFO] core.engine — [ENGINE] POL_USDT — adaptive risk ×0.70 (dd=0.0%, streak=0, conf=0.280) → risk_pct=0.0070
+2026-07-12 15:55:58 [INFO] core.engine — [ENGINE] ➤ BUY POL_USDT macd_ema [single] | qty=60554.576271 price=0.079650 sl=0.078956 tp1=0.080112 tp2=0.080575 tp3=0.081037 rr=1.33
+2026-07-12 15:55:58 [INFO] execution.paper_executor — [PAPER] OPEN BUY POL_USDT 60554.576271 @ 0.079650 | SL=0.078956 TP1=0.080112 TP2=0.080575 TP3=0.081037 | id=b3a34b2a
+2026-07-12 15:55:58 [INFO] strategies.aggregator — [AGG] ✓ CONSENSUS BUY | score=0.400 | margin=0.400 | strategies=['macd_ema', 'fib_retracement']
+2026-07-12 15:55:58 [INFO] core.engine — [ENGINE] LTC_USDT — adaptive risk ×0.72 (dd=0.0%, streak=0, conf=0.400) → risk_pct=0.0072
+2026-07-12 15:55:58 [INFO] core.engine — [ENGINE] ➤ BUY LTC_USDT macd_ema, fib_retracement | qty=213.650971 price=44.810000 sl=44.473304 tp1=45.034464 tp2=45.258928 tp3=45.483392 rr=1.33
+2026-07-12 15:55:58 [INFO] execution.paper_executor — [PAPER] OPEN BUY LTC_USDT 213.650971 @ 44.810000 | SL=44.473304 TP1=45.034464 TP2=45.258928 TP3=45.483392 | id=d42482cc
+2026-07-12 15:56:00 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\352fcc93d_apex_terminal_v21_signal_detail\apex_terminal\data_store\trade_journal.csv
+2026-07-12 15:56:01 [INFO] core.engine — ── Cycle 2 [LONDON/NEW_YORK] ──
+2026-07-12 15:56:01 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 15:56:04 [INFO] core.scanner — [SCAN] Scanning 136 symbols (workers=6)
+2026-07-12 15:56:54 [INFO] core.engine — [ENGINE] Scan complete — 94 signals found
+2026-07-12 15:57:05 [INFO] strategies.aggregator — [AGG] ✓ CONSENSUS BUY | score=0.440 | margin=0.440 | strategies=['macd_ema', 'scalp']
+2026-07-12 15:57:05 [INFO] core.engine — [ENGINE] 2Z_USDT — adaptive risk ×0.76 (dd=0.0%, streak=0, conf=0.440) → risk_pct=0.0076
+2026-07-12 15:57:05 [INFO] core.engine — [ENGINE] ➤ BUY 2Z_USDT macd_ema, scalp | qty=50207.839935 price=0.073470 sl=0.071958 tp1=0.074478 tp2=0.075487 tp3=0.076495 rr=1.33
+2026-07-12 15:57:05 [INFO] execution.paper_executor — [PAPER] OPEN BUY 2Z_USDT 50207.839935 @ 0.073470 | SL=0.071958 TP1=0.074478 TP2=0.075487 TP3=0.076495 | id=5204e9e9
+2026-07-12 15:57:06 [INFO] core.engine — ── Cycle 3 [LONDON/NEW_YORK] ──
+2026-07-12 15:57:06 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 15:57:08 [INFO] core.scanner — [SCAN] Scanning 136 symbols (workers=6)
+2026-07-12 15:58:12 [INFO] core.engine — [ENGINE] Scan complete — 96 signals found
+2026-07-12 15:58:22 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\352fcc93d_apex_terminal_v21_signal_detail\apex_terminal\data_store\trade_journal.csv
+2026-07-12 15:58:23 [INFO] core.engine — ── Cycle 4 [LONDON/NEW_YORK] ──
+2026-07-12 15:58:23 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 15:58:25 [INFO] core.scanner — [SCAN] Scanning 136 symbols (workers=6)
+2026-07-12 15:58:38 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 15:59:30 [INFO] core.engine — [ENGINE] Scan complete — 92 signals found
+2026-07-12 15:59:39 [INFO] core.engine — ── Cycle 5 [LONDON/NEW_YORK] ──
+2026-07-12 15:59:39 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 15:59:43 [INFO] core.scanner — [SCAN] Scanning 136 symbols (workers=6)
+2026-07-12 16:00:46 [INFO] core.engine — [ENGINE] Scan complete — 87 signals found
+2026-07-12 16:00:53 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\352fcc93d_apex_terminal_v21_signal_detail\apex_terminal\data_store\trade_journal.csv
+2026-07-12 16:00:53 [INFO] core.engine — ── Cycle 6 [LONDON/NEW_YORK] ──
+2026-07-12 16:00:53 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 16:00:56 [INFO] core.scanner — [SCAN] Scanning 130 symbols (workers=6)
+2026-07-12 16:02:10 [INFO] core.engine — [ENGINE] Scan complete — 83 signals found
+2026-07-12 16:02:13 [INFO] core.engine — ── Cycle 7 [LONDON/NEW_YORK] ──
+2026-07-12 16:02:13 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 16:02:18 [INFO] core.scanner — [SCAN] Scanning 130 symbols (workers=6)
+2026-07-12 16:03:08 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 16:03:53 [INFO] core.engine — [ENGINE] Scan complete — 81 signals found
+2026-07-12 16:03:59 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\352fcc93d_apex_terminal_v21_signal_detail\apex_terminal\data_store\trade_journal.csv
+2026-07-12 16:04:00 [INFO] core.engine — ── Cycle 8 [LONDON/NEW_YORK] ──
+2026-07-12 16:04:00 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 16:04:02 [INFO] core.scanner — [SCAN] Scanning 130 symbols (workers=6)
+2026-07-12 16:04:38 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 16:04:39 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 16:05:36 [WARNING] data.feed — [FEED] HTTP error attempt 1/3: <urlopen error _ssl.c:1063: The handshake operation timed out>
+2026-07-12 16:05:36 [WARNING] data.feed — [FEED] HTTP error attempt 1/3: <urlopen error _ssl.c:1063: The handshake operation timed out>
+2026-07-12 16:05:36 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 16:05:36 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 16:05:36 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 16:05:36 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 16:05:39 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 16:05:39 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 16:05:39 [WARNING] data.feed — [FEED] HTTP error attempt 1/3: <urlopen error _ssl.c:1063: The handshake operation timed out>
+2026-07-12 16:05:39 [WARNING] data.feed — [FEED] HTTP error attempt 1/3: <urlopen error _ssl.c:1063: The handshake operation timed out>
+2026-07-12 16:05:39 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 16:05:39 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 16:05:49 [WARNING] data.feed — [FEED] HTTP error attempt 1/3: <urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>
+2026-07-12 16:06:15 [INFO] core.engine — [ENGINE] Scan complete — 79 signals found
+2026-07-12 16:06:32 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\352fcc93d_apex_terminal_v21_signal_detail\apex_terminal\data_store\trade_journal.csv
+2026-07-12 16:06:32 [INFO] core.engine — ── Cycle 9 [LONDON/NEW_YORK] ──
+2026-07-12 16:06:32 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 16:06:35 [INFO] core.scanner — [SCAN] Scanning 130 symbols (workers=6)
+2026-07-12 16:07:40 [INFO] agent.watchdog — [WATCHDOG] Stopped by user.
+2026-07-12 16:59:21 [INFO] core.engine — ═══ APEX Terminal  mode=PAPER  exchange=MEXC ═══
+2026-07-12 16:59:22 [INFO] data.feed — [FEED] Exchange: MEXC
+2026-07-12 16:59:22 [INFO] execution.paper_executor — [PAPER] Restored state — balance=10017.25  open=5  prev_closed=0
+2026-07-12 16:59:22 [INFO] execution.router — [ROUTER] Paper mode — simulated fills
+2026-07-12 16:59:22 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\352fcc93d_apex_terminal_v21_signal_detail\apex_terminal\data_store\trade_journal.csv
+2026-07-12 16:59:22 [INFO] utils.equity_tracker — [EQUITY] Baseline: 10000.00 (date: 2026-07-12)
+2026-07-12 16:59:22 [INFO] learning.self_learner — [LEARNER] Loaded from disk — weights: {'macd_ema': 0.28, 'rsi_reversal': 0.22, 'breakout': 0.22, 'scalp': 0.16, 'fib_retracement': 0.12}
+2026-07-12 16:59:22 [INFO] core.engine — [ENGINE] Balance: 10017.25 | Mode: PAPER | Exchange: MEXC
+2026-07-12 16:59:22 [INFO] webapp_server — [API] Server running at http://0.0.0.0:8080
+2026-07-12 16:59:22 [INFO] apex — ==============================================
+2026-07-12 16:59:22 [INFO] apex —   Dashboard running →  http://localhost:8080  
+2026-07-12 16:59:22 [INFO] apex — ==============================================
+2026-07-12 16:59:22 [INFO] apex — Exchange status, the Watchdog's patch queue, and connected accounts are all there — the console log only tells part of the story.
+2026-07-12 16:59:22 [INFO] core.engine — [ENGINE] Running under Watchdog supervision (poll=10s). Ctrl+C to stop.
+2026-07-12 16:59:22 [INFO] agent.watchdog — [WATCHDOG] Supervising engine. poll=10s
+2026-07-12 16:59:22 [INFO] core.engine — ── Cycle 1 [LONDON/NEW_YORK] ──
+2026-07-12 16:59:22 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 16:59:34 [INFO] core.scanner — [SCAN] Scanning 134 symbols (workers=6)
+2026-07-12 17:00:08 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 17:01:11 [INFO] core.engine — [ENGINE] Scan complete — 89 signals found
+2026-07-12 17:01:15 [INFO] risk.tp_ladder — [TP_LADDER] LINK_USDT 9d164b2e — TP1 hit @ 8.069000 (target 8.063334)
+2026-07-12 17:01:15 [INFO] execution.paper_executor — [PAPER] PARTIAL CLOSE 9d164b2e 45.405221 @ 8.069000 | PnL=2.4973
+2026-07-12 17:01:15 [INFO] core.engine — [ENGINE] LINK_USDT TP1 — closed 45.405221 @ 8.069000 pnl=2.4973, SL -> 8.014010
+2026-07-12 17:01:18 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\352fcc93d_apex_terminal_v21_signal_detail\apex_terminal\data_store\trade_journal.csv
+2026-07-12 17:01:18 [INFO] core.engine — ── Cycle 2 [NEW_YORK] ──
+2026-07-12 17:01:18 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 17:01:22 [INFO] core.scanner — [SCAN] Scanning 129 symbols (workers=6)
+2026-07-12 17:01:35 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 17:01:59 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 17:02:46 [INFO] core.engine — [ENGINE] Scan complete — 83 signals found
+2026-07-12 17:02:50 [INFO] core.engine — ── Cycle 3 [NEW_YORK] ──
+2026-07-12 17:02:50 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 17:02:52 [INFO] core.scanner — [SCAN] Scanning 129 symbols (workers=6)
+2026-07-12 17:03:55 [INFO] core.engine — [ENGINE] Scan complete — 83 signals found
+2026-07-12 17:04:01 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\352fcc93d_apex_terminal_v21_signal_detail\apex_terminal\data_store\trade_journal.csv
+2026-07-12 17:04:01 [INFO] core.engine — ── Cycle 4 [NEW_YORK] ──
+2026-07-12 17:04:01 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 17:04:05 [INFO] core.scanner — [SCAN] Scanning 129 symbols (workers=6)
+2026-07-12 17:05:24 [INFO] core.engine — [ENGINE] Scan complete — 85 signals found
+2026-07-12 17:05:29 [INFO] core.engine — ── Cycle 5 [NEW_YORK] ──
+2026-07-12 17:05:29 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 17:05:33 [INFO] core.scanner — [SCAN] Scanning 129 symbols (workers=6)
+2026-07-12 17:06:43 [INFO] core.engine — [ENGINE] Scan complete — 87 signals found
+2026-07-12 17:06:50 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\352fcc93d_apex_terminal_v21_signal_detail\apex_terminal\data_store\trade_journal.csv
+2026-07-12 17:06:51 [INFO] core.engine — ── Cycle 6 [NEW_YORK] ──
+2026-07-12 17:06:51 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 17:06:59 [INFO] core.scanner — [SCAN] Scanning 129 symbols (workers=6)
+2026-07-12 17:08:15 [INFO] core.engine — [ENGINE] Scan complete — 86 signals found
+2026-07-12 17:08:20 [INFO] risk.tp_ladder — [TP_LADDER] 2Z_USDT 5204e9e9 — TP1 hit @ 0.074480 (target 0.074478)
+2026-07-12 17:08:20 [INFO] execution.paper_executor — [PAPER] PARTIAL CLOSE 5204e9e9 20083.135974 @ 0.074480 | PnL=20.2840
+2026-07-12 17:08:20 [INFO] core.engine — [ENGINE] 2Z_USDT TP1 — closed 20083.135974 @ 0.074480 pnl=20.2840, SL -> 0.073470
+2026-07-12 17:08:20 [INFO] core.engine — ── Cycle 7 [NEW_YORK] ──
+2026-07-12 17:08:20 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 17:08:24 [INFO] core.scanner — [SCAN] Scanning 129 symbols (workers=6)
+2026-07-12 17:08:59 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 17:08:59 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 17:09:34 [INFO] core.engine — [ENGINE] Scan complete — 81 signals found
+2026-07-12 17:09:41 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\352fcc93d_apex_terminal_v21_signal_detail\apex_terminal\data_store\trade_journal.csv
+2026-07-12 17:09:42 [INFO] core.engine — ── Cycle 8 [NEW_YORK] ──
+2026-07-12 17:09:42 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 17:09:44 [INFO] core.scanner — [SCAN] Scanning 129 symbols (workers=6)
+2026-07-12 17:10:44 [INFO] core.engine — [ENGINE] Scan complete — 83 signals found
+2026-07-12 17:10:48 [INFO] core.engine — ── Cycle 9 [NEW_YORK] ──
+2026-07-12 17:10:48 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 17:10:51 [INFO] core.scanner — [SCAN] Scanning 129 symbols (workers=6)
+2026-07-12 17:12:03 [INFO] agent.watchdog — [WATCHDOG] Stopped by user.
+2026-07-12 17:53:17 [INFO] core.engine — ═══ APEX Terminal  mode=PAPER  exchange=MEXC ═══
+2026-07-12 17:53:17 [INFO] data.feed — [FEED] Exchange: MEXC
+2026-07-12 17:53:17 [INFO] execution.paper_executor — [PAPER] Restored state — balance=10040.04  open=5  prev_closed=0
+2026-07-12 17:53:17 [INFO] execution.router — [ROUTER] Paper mode — simulated fills
+2026-07-12 17:53:17 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\352fcc93d_apex_terminal_v21_signal_detail\apex_terminal\data_store\trade_journal.csv
+2026-07-12 17:53:17 [INFO] utils.equity_tracker — [EQUITY] Baseline: 10000.00 (date: 2026-07-12)
+2026-07-12 17:53:17 [INFO] learning.self_learner — [LEARNER] Loaded from disk — weights: {'macd_ema': 0.28, 'rsi_reversal': 0.22, 'breakout': 0.22, 'scalp': 0.16, 'fib_retracement': 0.12}
+2026-07-12 17:53:17 [INFO] core.engine — [ENGINE] Balance: 10040.04 | Mode: PAPER | Exchange: MEXC
+2026-07-12 17:53:17 [INFO] webapp_server — [API] Server running at http://0.0.0.0:8080
+2026-07-12 17:53:17 [INFO] apex — ==============================================
+2026-07-12 17:53:17 [INFO] apex —   Dashboard running →  http://localhost:8080  
+2026-07-12 17:53:17 [INFO] apex — ==============================================
+2026-07-12 17:53:17 [INFO] apex — Exchange status, the Watchdog's patch queue, and connected accounts are all there — the console log only tells part of the story.
+2026-07-12 17:53:17 [INFO] core.engine — [ENGINE] Running under Watchdog supervision (poll=10s). Ctrl+C to stop.
+2026-07-12 17:53:17 [INFO] agent.watchdog — [WATCHDOG] Supervising engine. poll=10s
+2026-07-12 17:53:17 [INFO] core.engine — ── Cycle 1 [NEW_YORK] ──
+2026-07-12 17:53:17 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 17:53:24 [INFO] core.scanner — [SCAN] Scanning 134 symbols (workers=6)
+2026-07-12 17:54:26 [INFO] core.engine — [ENGINE] Scan complete — 95 signals found
+2026-07-12 17:54:39 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\352fcc93d_apex_terminal_v21_signal_detail\apex_terminal\data_store\trade_journal.csv
+2026-07-12 17:54:40 [INFO] core.engine — ── Cycle 2 [NEW_YORK] ──
+2026-07-12 17:54:40 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 17:54:42 [INFO] core.scanner — [SCAN] Scanning 134 symbols (workers=6)
+2026-07-12 17:55:50 [INFO] core.engine — [ENGINE] Scan complete — 96 signals found
+2026-07-12 17:55:54 [INFO] risk.tp_ladder — [TP_LADDER] POL_USDT b3a34b2a — TP1 hit @ 0.080120 (target 0.080112)
+2026-07-12 17:55:54 [INFO] execution.paper_executor — [PAPER] PARTIAL CLOSE b3a34b2a 24221.830508 @ 0.080120 | PnL=11.3843
+2026-07-12 17:55:54 [INFO] core.engine — [ENGINE] POL_USDT TP1 — closed 24221.830508 @ 0.080120 pnl=11.3843, SL -> 0.079650
+2026-07-12 17:55:54 [INFO] core.engine — ── Cycle 3 [NEW_YORK] ──
+2026-07-12 17:55:54 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 17:55:58 [INFO] core.scanner — [SCAN] Scanning 134 symbols (workers=6)
+2026-07-12 17:57:05 [INFO] core.engine — [ENGINE] Scan complete — 96 signals found
+2026-07-12 17:57:11 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\352fcc93d_apex_terminal_v21_signal_detail\apex_terminal\data_store\trade_journal.csv
+2026-07-12 17:57:11 [INFO] core.engine — ── Cycle 4 [NEW_YORK] ──
+2026-07-12 17:57:11 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 17:57:14 [INFO] core.scanner — [SCAN] Scanning 134 symbols (workers=6)
+2026-07-12 17:58:19 [INFO] core.engine — [ENGINE] Scan complete — 95 signals found
+2026-07-12 17:58:24 [INFO] risk.tp_ladder — [TP_LADDER] LINK_USDT 9d164b2e — TP1 hit @ 8.064000 (target 8.063334)
+2026-07-12 17:58:24 [INFO] execution.paper_executor — [PAPER] PARTIAL CLOSE 9d164b2e 9.081044 @ 8.064000 | PnL=0.4541
+2026-07-12 17:58:24 [INFO] core.engine — [ENGINE] LINK_USDT TP1 — closed 9.081044 @ 8.064000 pnl=0.4541, SL -> 8.014010
+2026-07-12 17:58:25 [INFO] core.engine — ── Cycle 5 [NEW_YORK] ──
+2026-07-12 17:58:25 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 17:58:29 [INFO] core.scanner — [SCAN] Scanning 134 symbols (workers=6)
+2026-07-12 17:59:36 [INFO] core.engine — [ENGINE] Scan complete — 92 signals found
+2026-07-12 17:59:44 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\352fcc93d_apex_terminal_v21_signal_detail\apex_terminal\data_store\trade_journal.csv
+2026-07-12 17:59:45 [INFO] core.engine — ── Cycle 6 [NEW_YORK] ──
+2026-07-12 17:59:45 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 17:59:48 [INFO] core.scanner — [SCAN] Scanning 134 symbols (workers=6)
+2026-07-12 18:01:08 [INFO] core.engine — [ENGINE] Scan complete — 84 signals found
+2026-07-12 18:01:12 [INFO] core.engine — ── Cycle 7 [NEW_YORK] ──
+2026-07-12 18:01:12 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 18:01:15 [INFO] core.scanner — [SCAN] Scanning 131 symbols (workers=6)
+2026-07-12 18:02:28 [INFO] core.engine — [ENGINE] Scan complete — 82 signals found
+2026-07-12 18:02:34 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\352fcc93d_apex_terminal_v21_signal_detail\apex_terminal\data_store\trade_journal.csv
+2026-07-12 18:02:35 [INFO] core.engine — ── Cycle 8 [NEW_YORK] ──
+2026-07-12 18:02:35 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 18:02:39 [INFO] core.scanner — [SCAN] Scanning 131 symbols (workers=6)
+2026-07-12 18:03:46 [INFO] core.engine — [ENGINE] Scan complete — 81 signals found
+2026-07-12 18:03:49 [INFO] core.engine — ── Cycle 9 [NEW_YORK] ──
+2026-07-12 18:03:49 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 18:03:52 [INFO] core.scanner — [SCAN] Scanning 131 symbols (workers=6)
+2026-07-12 18:05:20 [INFO] core.engine — [ENGINE] Scan complete — 81 signals found
+2026-07-12 18:05:27 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\352fcc93d_apex_terminal_v21_signal_detail\apex_terminal\data_store\trade_journal.csv
+2026-07-12 18:05:27 [INFO] core.engine — ── Cycle 10 [NEW_YORK] ──
+2026-07-12 18:05:27 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 18:05:30 [INFO] core.scanner — [SCAN] Scanning 131 symbols (workers=6)
+2026-07-12 18:06:37 [INFO] core.engine — [ENGINE] Scan complete — 82 signals found
+2026-07-12 18:06:42 [INFO] core.engine — ── Cycle 11 [NEW_YORK] ──
+2026-07-12 18:06:42 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 18:06:46 [INFO] core.scanner — [SCAN] Scanning 131 symbols (workers=6)
+2026-07-12 18:07:57 [INFO] core.engine — [ENGINE] Scan complete — 83 signals found
+2026-07-12 18:08:06 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\352fcc93d_apex_terminal_v21_signal_detail\apex_terminal\data_store\trade_journal.csv
+2026-07-12 18:08:06 [INFO] core.engine — ── Cycle 12 [NEW_YORK] ──
+2026-07-12 18:08:06 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 18:08:11 [INFO] core.scanner — [SCAN] Scanning 131 symbols (workers=6)
+2026-07-12 18:09:44 [INFO] core.engine — [ENGINE] Scan complete — 79 signals found
+2026-07-12 18:09:46 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 18:09:49 [INFO] core.engine — ── Cycle 13 [NEW_YORK] ──
+2026-07-12 18:09:49 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 18:09:52 [INFO] core.scanner — [SCAN] Scanning 131 symbols (workers=6)
+2026-07-12 18:11:10 [INFO] core.engine — [ENGINE] Scan complete — 81 signals found
+2026-07-12 18:11:18 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\352fcc93d_apex_terminal_v21_signal_detail\apex_terminal\data_store\trade_journal.csv
+2026-07-12 18:11:18 [INFO] core.engine — ── Cycle 14 [NEW_YORK] ──
+2026-07-12 18:11:18 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 18:11:21 [INFO] core.scanner — [SCAN] Scanning 131 symbols (workers=6)
+2026-07-12 18:12:37 [INFO] core.engine — [ENGINE] Scan complete — 83 signals found
+2026-07-12 18:12:40 [INFO] core.engine — ── Cycle 15 [NEW_YORK] ──
+2026-07-12 18:12:40 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 18:12:44 [INFO] core.scanner — [SCAN] Scanning 131 symbols (workers=6)
+2026-07-12 18:13:59 [INFO] core.engine — [ENGINE] Scan complete — 82 signals found
+2026-07-12 18:14:07 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\352fcc93d_apex_terminal_v21_signal_detail\apex_terminal\data_store\trade_journal.csv
+2026-07-12 18:14:07 [INFO] core.engine — ── Cycle 16 [NEW_YORK] ──
+2026-07-12 18:14:07 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 18:14:12 [INFO] core.scanner — [SCAN] Scanning 131 symbols (workers=6)
+2026-07-12 18:15:21 [INFO] core.engine — [ENGINE] Scan complete — 84 signals found
+2026-07-12 18:15:29 [INFO] core.engine — ── Cycle 17 [NEW_YORK] ──
+2026-07-12 18:15:29 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 18:15:34 [INFO] core.scanner — [SCAN] Scanning 131 symbols (workers=6)
+2026-07-12 18:17:00 [INFO] core.engine — [ENGINE] Scan complete — 83 signals found
+2026-07-12 18:17:08 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\352fcc93d_apex_terminal_v21_signal_detail\apex_terminal\data_store\trade_journal.csv
+2026-07-12 18:17:09 [INFO] core.engine — ── Cycle 18 [NEW_YORK] ──
+2026-07-12 18:17:09 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 18:17:12 [INFO] core.scanner — [SCAN] Scanning 131 symbols (workers=6)
+2026-07-12 18:18:38 [INFO] core.engine — [ENGINE] Scan complete — 83 signals found
+2026-07-12 18:18:41 [INFO] core.engine — ── Cycle 19 [NEW_YORK] ──
+2026-07-12 18:18:41 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 18:18:45 [INFO] core.scanner — [SCAN] Scanning 131 symbols (workers=6)
+2026-07-12 18:20:00 [INFO] core.engine — [ENGINE] Scan complete — 86 signals found
+2026-07-12 18:20:06 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\352fcc93d_apex_terminal_v21_signal_detail\apex_terminal\data_store\trade_journal.csv
+2026-07-12 18:20:06 [INFO] core.engine — ── Cycle 20 [NEW_YORK] ──
+2026-07-12 18:20:06 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 18:20:11 [INFO] core.scanner — [SCAN] Scanning 131 symbols (workers=6)
+2026-07-12 18:21:23 [INFO] core.engine — [ENGINE] Scan complete — 84 signals found
+2026-07-12 18:21:26 [INFO] core.engine — ── Cycle 21 [NEW_YORK] ──
+2026-07-12 18:21:26 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 18:21:29 [INFO] core.scanner — [SCAN] Scanning 131 symbols (workers=6)
+2026-07-12 22:28:41 [INFO] core.engine — ═══ APEX Terminal  mode=PAPER  exchange=MEXC ═══
+2026-07-12 22:28:41 [INFO] data.feed — [FEED] Exchange: MEXC
+2026-07-12 22:28:41 [INFO] execution.paper_executor — [PAPER] Restored state — balance=10051.87  open=5  prev_closed=0
+2026-07-12 22:28:41 [INFO] execution.router — [ROUTER] Paper mode — simulated fills
+2026-07-12 22:28:41 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\352fcc93d_apex_terminal_v21_signal_detail\apex_terminal\data_store\trade_journal.csv
+2026-07-12 22:28:41 [INFO] utils.equity_tracker — [EQUITY] Baseline: 10000.00 (date: 2026-07-12)
+2026-07-12 22:28:42 [INFO] learning.self_learner — [LEARNER] Loaded from disk — weights: {'macd_ema': 0.28, 'rsi_reversal': 0.22, 'breakout': 0.22, 'scalp': 0.16, 'fib_retracement': 0.12}
+2026-07-12 22:28:42 [INFO] core.engine — [ENGINE] Balance: 10051.87 | Mode: PAPER | Exchange: MEXC
+2026-07-12 22:28:42 [INFO] webapp_server — [API] Server running at http://0.0.0.0:8080
+2026-07-12 22:28:42 [INFO] apex — ==============================================
+2026-07-12 22:28:42 [INFO] apex —   Dashboard running →  http://localhost:8080  
+2026-07-12 22:28:42 [INFO] apex — ==============================================
+2026-07-12 22:28:42 [INFO] apex — Exchange status, the Watchdog's patch queue, and connected accounts are all there — the console log only tells part of the story.
+2026-07-12 22:28:42 [INFO] core.engine — [ENGINE] Running under Watchdog supervision (poll=10s). Ctrl+C to stop.
+2026-07-12 22:28:42 [INFO] agent.watchdog — [WATCHDOG] Supervising engine. poll=10s
+2026-07-12 22:28:42 [INFO] core.engine — ── Cycle 1 [DEAD_ZONE] ──
+2026-07-12 22:28:42 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 22:28:45 [INFO] core.scanner — [SCAN] Scanning 136 symbols (workers=6)
+2026-07-12 22:29:30 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 22:29:30 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 22:29:38 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 22:30:21 [INFO] core.engine — [ENGINE] Scan complete — 82 signals found
+2026-07-12 22:30:27 [INFO] risk.tp_ladder — [TP_LADDER] LINK_USDT 9d164b2e — TP1 hit @ 8.066000 (target 8.063334)
+2026-07-12 22:30:27 [INFO] execution.paper_executor — [PAPER] PARTIAL CLOSE 9d164b2e 1.816209 @ 8.066000 | PnL=0.0944
+2026-07-12 22:30:27 [INFO] core.engine — [ENGINE] LINK_USDT TP1 — closed 1.816209 @ 8.066000 pnl=0.0944, SL -> 8.014010
+2026-07-12 22:30:27 [INFO] risk.tp_ladder — [TP_LADDER] POL_USDT b3a34b2a — TP1 hit @ 0.080610 (target 0.080112)
+2026-07-12 22:30:27 [INFO] risk.tp_ladder — [TP_LADDER] POL_USDT b3a34b2a — TP2 hit @ 0.080610 (target 0.080575)
+2026-07-12 22:30:27 [INFO] execution.paper_executor — [PAPER] PARTIAL CLOSE b3a34b2a 4844.366102 @ 0.080610 | PnL=4.6506
+2026-07-12 22:30:27 [INFO] core.engine — [ENGINE] POL_USDT TP1 — closed 4844.366102 @ 0.080610 pnl=4.6506, SL -> 0.079650
+2026-07-12 22:30:27 [INFO] execution.paper_executor — [PAPER] PARTIAL CLOSE b3a34b2a 847.764068 @ 0.080610 | PnL=0.8139
+2026-07-12 22:30:27 [INFO] core.engine — [ENGINE] POL_USDT TP2 — closed 847.764068 @ 0.080610 pnl=0.8139, SL -> 0.080112
+2026-07-12 22:30:27 [INFO] execution.paper_executor — [PAPER] CLOSE LTC_USDT d42482cc @ 44.440000 | PnL=-79.0509 | balance=9978.38 | reason=sl_hit
+2026-07-12 22:30:27 [INFO] execution.paper_executor — [PAPER] CLOSE 2Z_USDT 5204e9e9 @ 0.073140 | PnL=-3.3137 | balance=9975.07 | reason=sl_hit
+2026-07-12 22:30:27 [INFO] journal.trade_journal — [JOURNAL] Logged trade LTC_USDT d42482cc pnl=-79.0509
+2026-07-12 22:30:27 [INFO] core.engine — [ENGINE] ✓ Closed BUY LTC_USDT pnl=-79.0509 reason=sl_hit
+2026-07-12 22:30:27 [INFO] journal.trade_journal — [JOURNAL] Logged trade 2Z_USDT 5204e9e9 pnl=-3.3137
+2026-07-12 22:30:27 [INFO] core.engine — [ENGINE] ✓ Closed BUY 2Z_USDT pnl=-3.3137 reason=sl_hit
+2026-07-12 22:30:27 [INFO] risk.trailing_stop — [TRAIL] BUY b3a34b2a — SL 0.08011239 → 0.08037880
+2026-07-12 22:30:38 [INFO] core.engine — [ENGINE] 20 candidates evaluated, 0 trades entered — top reasons: no_strategy_agreement×19, volatility_gate_blocked×1
+2026-07-12 22:30:40 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\352fcc93d_apex_terminal_v21_signal_detail\apex_terminal\data_store\trade_journal.csv
+2026-07-12 22:30:40 [INFO] core.engine — ── Cycle 2 [DEAD_ZONE] ──
+2026-07-12 22:30:40 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 22:30:44 [INFO] core.scanner — [SCAN] Scanning 136 symbols (workers=6)
+2026-07-12 22:32:26 [INFO] core.engine — [ENGINE] Scan complete — 92 signals found
+2026-07-12 22:32:37 [INFO] strategies.aggregator — [AGG] ✓ CONSENSUS BUY | score=0.400 | margin=0.400 | strategies=['macd_ema', 'fib_retracement']
+2026-07-12 22:32:37 [INFO] core.engine — [ENGINE] METASTOCK_USDT — adaptive risk ×0.72 (dd=0.5%, streak=2, conf=0.400) → risk_pct=0.0072
+2026-07-12 22:32:37 [INFO] core.engine — [ENGINE] ➤ BUY METASTOCK_USDT macd_ema, fib_retracement | qty=19.672072 price=672.190000 sl=668.551702 tp1=674.615532 tp2=677.041064 tp3=679.466597 rr=1.33
+2026-07-12 22:32:37 [INFO] execution.paper_executor — [PAPER] OPEN BUY METASTOCK_USDT 19.672072 @ 672.190000 | SL=668.551702 TP1=674.615532 TP2=677.041064 TP3=679.466597 | id=c8040d7e
+2026-07-12 22:32:41 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\352fcc93d_apex_terminal_v21_signal_detail\apex_terminal\data_store\trade_journal.csv
+2026-07-12 22:32:42 [INFO] core.engine — ── Cycle 3 [DEAD_ZONE] ──
+2026-07-12 22:32:42 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 22:32:46 [INFO] core.scanner — [SCAN] Scanning 136 symbols (workers=6)
+2026-07-12 22:33:03 [WARNING] data.feed — [FEED] Error attempt 1/3: The read operation timed out
+2026-07-12 22:34:04 [INFO] core.engine — [ENGINE] Scan complete — 86 signals found
+2026-07-12 22:34:18 [INFO] strategies.aggregator — [AGG] ✓ SINGLE-STRATEGY SELL | macd_ema weight=0.280 | scanner=S+
+2026-07-12 22:34:18 [INFO] core.engine — [ENGINE] XDC_USDT — adaptive risk ×0.70 (dd=0.5%, streak=2, conf=0.280) → risk_pct=0.0070
+2026-07-12 22:34:18 [INFO] core.engine — [ENGINE] ➤ SELL XDC_USDT macd_ema [single] | qty=197303.678930 price=0.026910 sl=0.027122 tp1=0.026769 tp2=0.026628 tp3=0.026486 rr=1.33
+2026-07-12 22:34:18 [INFO] execution.paper_executor — [PAPER] OPEN SELL XDC_USDT 197303.678930 @ 0.026910 | SL=0.027122 TP1=0.026769 TP2=0.026628 TP3=0.026486 | id=6a83ca0b
+2026-07-12 22:34:18 [INFO] core.engine — ── Cycle 4 [DEAD_ZONE] ──
+2026-07-12 22:34:18 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 22:34:24 [INFO] core.scanner — [SCAN] Scanning 136 symbols (workers=6)
+2026-07-12 22:35:37 [INFO] core.engine — [ENGINE] Scan complete — 90 signals found
+2026-07-12 22:35:41 [INFO] execution.paper_executor — [PAPER] CLOSE FARTCOIN_USDT bc390e0d @ 0.147390 | PnL=-44.2775 | balance=9930.79 | reason=sl_hit
+2026-07-12 22:35:41 [INFO] journal.trade_journal — [JOURNAL] Logged trade FARTCOIN_USDT bc390e0d pnl=-44.2775
+2026-07-12 22:35:41 [INFO] core.engine — [ENGINE] ✓ Closed BUY FARTCOIN_USDT pnl=-44.2775 reason=sl_hit
+2026-07-12 22:36:01 [INFO] core.engine — [ENGINE] 18 candidates evaluated, 0 trades entered — top reasons: no_strategy_agreement×17, already_open×2, volatility_gate_blocked×1
+2026-07-12 22:36:04 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\352fcc93d_apex_terminal_v21_signal_detail\apex_terminal\data_store\trade_journal.csv
+2026-07-12 22:36:05 [INFO] core.engine — ── Cycle 5 [DEAD_ZONE] ──
+2026-07-12 22:36:05 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 22:36:12 [INFO] core.scanner — [SCAN] Scanning 136 symbols (workers=6)
+2026-07-12 22:37:14 [INFO] core.engine — [ENGINE] Scan complete — 89 signals found
+2026-07-12 22:37:38 [INFO] core.engine — [ENGINE] 18 candidates evaluated, 0 trades entered — top reasons: no_strategy_agreement×17, already_open×2, volatility_gate_blocked×1
+2026-07-12 22:37:39 [INFO] core.engine — ── Cycle 6 [DEAD_ZONE] ──
+2026-07-12 22:37:39 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 22:37:49 [INFO] core.scanner — [SCAN] Scanning 136 symbols (workers=6)
+2026-07-12 22:39:03 [INFO] core.engine — [ENGINE] Scan complete — 91 signals found
+2026-07-12 22:39:12 [INFO] core.engine — [ENGINE] 18 candidates evaluated, 0 trades entered — top reasons: no_strategy_agreement×17, already_open×2, volatility_gate_blocked×1
+2026-07-12 22:39:15 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\352fcc93d_apex_terminal_v21_signal_detail\apex_terminal\data_store\trade_journal.csv
+2026-07-12 22:39:15 [INFO] core.engine — ── Cycle 7 [DEAD_ZONE] ──
+2026-07-12 22:39:15 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 22:39:22 [INFO] core.scanner — [SCAN] Scanning 136 symbols (workers=6)
+2026-07-12 22:40:15 [INFO] core.engine — [ENGINE] Scan complete — 90 signals found
+2026-07-12 22:40:26 [INFO] core.engine — [ENGINE] 18 candidates evaluated, 0 trades entered — top reasons: no_strategy_agreement×18, already_open×2
+2026-07-12 22:40:26 [INFO] core.engine — ── Cycle 8 [DEAD_ZONE] ──
+2026-07-12 22:40:26 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 22:40:29 [INFO] core.scanner — [SCAN] Scanning 136 symbols (workers=6)
+2026-07-12 22:41:08 [INFO] execution.paper_executor — [PAPER] CLOSE POL_USDT b3a34b2a @ 0.080510 | PnL=0.6249 | balance=9931.42 | reason=manual_close
+2026-07-12 22:41:08 [INFO] journal.trade_journal — [JOURNAL] Logged trade POL_USDT b3a34b2a pnl=0.6249
+2026-07-12 22:41:08 [INFO] core.engine — [ENGINE] ✓ Closed BUY POL_USDT pnl=0.6249 reason=manual_close
+2026-07-12 22:41:19 [INFO] execution.paper_executor — [PAPER] CLOSE LINK_USDT 9d164b2e @ 8.064000 | PnL=0.0454 | balance=9931.46 | reason=manual_close
+2026-07-12 22:41:19 [INFO] journal.trade_journal — [JOURNAL] Logged trade LINK_USDT 9d164b2e pnl=0.0454
+2026-07-12 22:41:19 [INFO] core.engine — [ENGINE] ✓ Closed BUY LINK_USDT pnl=0.0454 reason=manual_close
+2026-07-12 22:41:38 [INFO] core.engine — [ENGINE] Scan complete — 90 signals found
+2026-07-12 22:41:49 [INFO] core.engine — [ENGINE] 18 candidates evaluated, 0 trades entered — top reasons: no_strategy_agreement×18, already_open×2
+2026-07-12 22:41:51 [INFO] journal.trade_journal — [JOURNAL] Trade log: C:\Users\NCC\Downloads\352fcc93d_apex_terminal_v21_signal_detail\apex_terminal\data_store\trade_journal.csv
+2026-07-12 22:41:52 [INFO] core.engine — ── Cycle 9 [DEAD_ZONE] ──
+2026-07-12 22:41:52 [INFO] core.engine — [ENGINE] Running full market scan...
+2026-07-12 22:41:55 [INFO] core.scanner — [SCAN] Scanning 136 symbols (workers=6)
+2026-07-12 22:42:22 [INFO] agent.watchdog — [WATCHDOG] Stopped by user.
